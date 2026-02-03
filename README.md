@@ -1,6 +1,6 @@
-# Waqas Naveed - AI Engineer & Data Scientist Portfolio (React + Tailwind)
+# Shayan Umair - Business Development Intern Portfolio (React + Tailwind)
 
-A comprehensive, professional portfolio website built with React and Tailwind CSS, showcasing 100+ AI/ML projects, expertise in Data Science, Data Engineering, and Full-Stack Development.
+A professional portfolio website built with React and Tailwind CSS, showcasing business development skills, market research expertise, and professional experience.
 
 ## 🚀 Features
 
@@ -12,7 +12,6 @@ A comprehensive, professional portfolio website built with React and Tailwind CS
 - **Dark Mode**: Theme toggle with persistent preference
 - **React Icons**: Modern icon library integration
 - **Toast Notifications**: Success/failure messages using React Toastify
-- **11 Featured Projects**: Detailed project showcases with HD images
 - **Professional UI/UX**: Industry-standard design with enhanced user experience
 
 ## 📋 Prerequisites
@@ -58,9 +57,9 @@ Personal-portfolio-website/
 │   │   ├── Navbar.js       # Navigation with theme toggle
 │   │   ├── ParticlesBackground.js
 │   │   ├── Preloader.js
-│   │   ├── Projects.js     # 11 featured projects
+│   │   ├── Projects.js     # Featured projects
 │   │   ├── Services.js     # Services offered
-│   │   ├── Skills.js       # Technical skills
+│   │   ├── Skills.js       # Business development skills
 │   │   └── Testimonials.js
 │   ├── App.js              # Main App component
 │   ├── index.js            # React entry point
@@ -73,30 +72,25 @@ Personal-portfolio-website/
 ## 🎨 Key Highlights
 
 ### Professional Experience
-- **General Manager & AI Engineer** at PropertyReply (UK-based) - 2023 to Present
-- **AI Engineer & Data Scientist** (Freelance) - 100+ projects delivered
-- **3+ Years** of professional experience
+- **Sales Management** at Moscow Mart - 04/2023 to 08/2024
+- **1+ Year** of professional experience in sales and business development
 
-### Expertise Areas
-- **AI/ML**: Machine Learning, Deep Learning, Computer Vision, NLP
-- **Data Science**: Data Analysis, Statistical Modeling, Predictive Analytics
-- **Data Engineering**: ETL Pipelines, Data Warehousing, Big Data Processing
-- **Web Development**: React, Next.js, Tailwind CSS, Node.js
-- **Mobile Development**: Flutter, React Native, Expo
+### Education
+- **Bachelor of Computer Science** at Lahore Leads University (03/2024 - Present)
+- **Intermediate** at Punjab Group of Colleges (03/2021 - 07/2023)
+- **Matriculation** at Dar-e-Arkam School (03/2019 - 10/2021)
 
-### Featured Projects
-1. Franchise Statement Automation System
-2. Smart University Neighborhood Advisory System
-3. AI-Powered Multi-Platform Social Media Auto-Posting
-4. HIPAA-Compliant Healthcare Document Compliance Chatbot
-5. Human Activity Recognition from Video
-6. Skeleton-Based Human Activity Recognition (LSTM/ST-GCN)
-7. Emergency Towing Service Flutter Application
-8. Deep Learning-Based Skin Disease Classification
-9. YOLO-Based Autonomous Pilot Transfer Safety System
-10. AI Voice Call Agent with Twilio Integration
-11. EduPath - Smart Student Advisory Bot
-12. HealthGenix - Online Gym & Rehabilitation App
+### Skills & Expertise
+- **Market Research & Analysis**: Identifying opportunities and analyzing trends
+- **Communication & Negotiation**: Building strong client relationships
+- **MS Office/Excel Skills**: Data management and reporting
+- **Team Collaboration**: Working effectively in cross-functional teams
+- **Problem-Solving & Critical Thinking**: Strategic approach to business challenges
+- **Presentation Skills**: Delivering compelling presentations
+
+### Certifications
+- **Core Python** (01/2024 - 03/2024)
+- **MERN Stack** (05/2024 - 11/2024)
 
 ## 📦 Technologies Used
 
@@ -123,26 +117,19 @@ Personal-portfolio-website/
 
 - **Profile Image**: Place `profile2.png` in the `public/` folder
 - **CV File**: Place `Shayan Umair-Business Development Intern.pdf` in `public/assets/` folder
-- **All Content**: Updated with latest projects, experience, and achievements
+- **All Content**: Updated with latest experience and achievements
 - **Responsive Design**: Fully optimized for all screen sizes
 - **Theme**: Professional blue and white color scheme
-- **100+ Projects**: Mentioned throughout the portfolio
 
 ## 📧 Contact
 
-- **Email**: waqas56jb@gmail.com
-- **Phone**: +92 477 603854
-- **Location**: Faisalabad, Pakistan (Available for Remote Work Worldwide)
-- **LinkedIn**: [Waqas Naveed](https://www.linkedin.com/in/waqas-naveed-630297247/)
-- **GitHub**: [Waqas56jb](https://github.com/Waqas56jb)
-- **Medium**: [@waqas56jb](https://medium.com/@waqas56jb)
+- **Email**: shayan.umairadditise@gmail.com
+- **Phone**: +92 310 7679332
+- **Location**: Ashraf & Sons Heights, Johar Town, LHR, Lahore, Pakistan
 
-## 🏢 Current Role
+## 🎯 Objective
 
-**General Manager & AI Engineer** at PropertyReply (UK-based)
-- Collaborating with Saqib Hussain
-- Leading AI initiatives and technical operations
-- Developing innovative solutions for property management
+Seeking a Business Development Intern position to apply strong analytical, communication, and problem-solving skills. Eager to contribute to market research, client relationship management, and strategic growth initiatives while gaining hands-on industry experience.
 
 ---
 

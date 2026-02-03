@@ -35,9 +35,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { href: '#', icon: FaLinkedinIn, label: 'LinkedIn' },
-    { href: '#', icon: FaGithub, label: 'GitHub' },
-    { href: '#', icon: FaMedium, label: 'Medium' },
+    { href: 'https://www.linkedin.com/in/shayan-umair-3b2577225/', icon: FaLinkedinIn, label: 'LinkedIn' },
+    { href: 'https://github.com/shayan9689', icon: FaGithub, label: 'GitHub' },
+    { href: 'https://medium.com/@waqas56jb', icon: FaMedium, label: 'Medium' },
   ];
 
   return (
@@ -53,11 +53,11 @@ const Footer = () => {
               }}
               className="flex items-center gap-1 text-[1.8rem] font-bold font-serif text-white hover:text-primary transition-colors"
             >
-              <span>SU</span>
+              <span>WN</span>
               <span className="text-primary">.</span>
             </a>
             <p className="text-[#94a3b8] text-sm leading-relaxed">
-              Business Development Intern candidate with strong analytical, communication, and problem-solving skills. Eager to contribute to market research, client relationship management, and strategic growth initiatives.
+              AI Engineer & Data Scientist with 3+ years of experience, delivering 100+ AI/ML projects. Creating intelligent solutions through cutting-edge technology for international clients.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => {
@@ -105,7 +105,7 @@ const Footer = () => {
           <div className="flex flex-col gap-5">
             <h3 className="text-xl mb-2.5 text-white font-semibold">Services</h3>
             <ul className="flex flex-col gap-3">
-              {['Market Research', 'Business Development', 'Sales Management', 'Client Relations', 'Strategic Planning'].map((service) => (
+              {['Machine Learning', 'Data Science', 'Data Engineering', 'Web Development', 'Mobile Apps'].map((service) => (
                 <li key={service}>
                   <a href="#services" className="text-[#94a3b8] text-sm hover:text-primary hover:pl-1 transition-all">
                     {service}
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-5">
             <h3 className="text-xl mb-2.5 text-white font-semibold">Newsletter</h3>
-            <p className="text-[#94a3b8] text-sm">Subscribe to my newsletter for the latest updates on business development, market trends, and career opportunities.</p>
+            <p className="text-[#94a3b8] text-sm">Subscribe to my newsletter for the latest updates on AI/ML, Data Science, and technology trends.</p>
             <form onSubmit={handleNewsletterSubmit} className="flex bg-white/10 rounded-lg overflow-hidden border border-white/20">
               <input
                 type="email"
@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center pt-5 border-t border-white/10 gap-4 sm:gap-0 text-center sm:text-left">
           <p className="text-[#94a3b8] text-xs sm:text-sm">
-            &copy; 2025 Shayan Umair. All Rights Reserved. | Business Development Intern Candidate
+            &copy; 2025 Shayan Umair. All Rights Reserved. | General Manager & AI Engineer at PropertyReply (UK)
           </p>
           <div className="flex gap-4 sm:gap-5 justify-center">
             <button type="button" className="text-[#94a3b8] text-xs hover:text-primary transition-colors bg-transparent border-none cursor-pointer">

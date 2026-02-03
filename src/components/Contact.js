@@ -18,32 +18,50 @@ const Contact = () => {
     });
   };
 
+  const API_BASE_URL = 'https://shayan-personal-assistant.vercel.app';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Form submitted:', formData);
-      
-      toast.success('Thank you for your message! I will get back to you soon.', {
-        position: 'top-right',
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
+      const response = await fetch(`${API_BASE_URL}/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message
+        })
       });
 
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast.success('Thank you for your message! I will get back to you soon.', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        throw new Error(data.error || 'Failed to send message');
+      }
     } catch (error) {
-      toast.error('Something went wrong. Please try again.', {
+      console.error('Contact form error:', error);
+      toast.error(error.message || 'Something went wrong. Please try again.', {
         position: 'top-right',
         autoClose: 5000,
         hideProgressBar: false,
@@ -57,10 +75,10 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { href: '#', icon: FaLinkedinIn, label: 'LinkedIn' },
-    { href: '#', icon: FaGithub, label: 'GitHub' },
-    { href: '#', icon: FaMedium, label: 'Medium' },
-    { href: '#', icon: FaTwitter, label: 'Twitter' },
+    { href: 'https://www.linkedin.com/in/shayan-umair-3b2577225/', icon: FaLinkedinIn, label: 'LinkedIn' },
+    { href: 'https://github.com/shayan9689', icon: FaGithub, label: 'GitHub' },
+    { href: 'https://medium.com/@waqas56jb', icon: FaMedium, label: 'Medium' },
+    { href: 'https://twitter.com/', icon: FaTwitter, label: 'Twitter' },
   ];
 
   return (
@@ -74,7 +92,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            Seeking Business Development Intern opportunities and open to collaborations
+            Available for freelance projects, long-term collaborations, and full-time opportunities
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-sm" />
         </div>
@@ -84,7 +102,7 @@ const Contact = () => {
               Let's talk about your project
             </h3>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base text-accent dark:text-[#94a3b8] leading-relaxed">
-              I'm seeking a Business Development Intern position to apply my strong analytical, communication, and problem-solving skills. I'm eager to contribute to market research, client relationship management, and strategic growth initiatives while gaining hands-on industry experience. Feel free to reach out for opportunities!
+              I'm available for freelance work, long-term international client partnerships, and full-time positions. Whether you need AI/ML solutions, data engineering, web development, or mobile applications, feel free to reach out. I specialize in delivering production-ready solutions that drive business value.
             </p>
             <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
               <div className="flex items-start gap-4">
@@ -94,10 +112,10 @@ const Contact = () => {
                 <div>
                   <h4 className="text-base sm:text-lg mb-1 text-dark dark:text-[#e5e7eb] font-semibold">Email</h4>
                   <a
-                    href="mailto:shayan.umairadditise@gmail.com"
+                    href="mailto:shayan19609@gmail.com"
                     className="text-sm sm:text-base text-accent dark:text-[#94a3b8] hover:text-primary transition-colors"
                   >
-                    shayan.umairadditise@gmail.com
+                    shayan19609@gmail.com
                   </a>
                 </div>
               </div>
@@ -121,8 +139,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg mb-1 text-dark dark:text-[#e5e7eb] font-semibold">Location</h4>
-                  <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8]">Ashraf & Sons Heights, Johar Town, LHR</p>
-                  <p className="text-xs sm:text-sm text-accent dark:text-[#94a3b8] mt-1">Lahore, Pakistan</p>
+                  <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8]">Gulburg Sargodha</p>
+                  <p className="text-xs sm:text-sm text-accent dark:text-[#94a3b8] mt-1">Pakistan</p>
                 </div>
               </div>
             </div>

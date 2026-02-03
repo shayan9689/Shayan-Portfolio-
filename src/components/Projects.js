@@ -150,7 +150,7 @@ const Projects = () => {
       tags: ['React Native', 'Expo', 'MediaPipe', 'Express.js', 'MySQL'],
       progress: 96,
       milestones: ['MediaPipe', 'Backend API', 'UI/UX', 'Testing'],
-      link: 'https://github.com/Waqas56jb/HealthGenix-Online-Gym-Training-App',
+      link: 'https://github.com/shayan9689/HealthGenix-Online-Gym-Training-App',
       delay: 200,
     },
   ];

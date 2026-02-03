@@ -3,8 +3,8 @@ import { FaLinkedinIn, FaGithub, FaMedium, FaTwitter } from 'react-icons/fa';
 
 const Hero = () => {
   const socialLinks = [
-    { href: '#', icon: FaLinkedinIn, label: 'LinkedIn' },
-    { href: '#', icon: FaGithub, label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/shayan-umair-3b2577225/', icon: FaLinkedinIn, label: 'LinkedIn' },
+    { href: 'https://github.com/shayan9689', icon: FaGithub, label: 'GitHub' },
     { href: '#', icon: FaMedium, label: 'Medium' },
     { href: '#', icon: FaTwitter, label: 'Twitter' },
   ];
@@ -35,7 +35,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 md:mb-8 max-w-[600px] mx-auto lg:mx-0 text-secondary dark:text-[#e2e8f0] leading-relaxed font-sans" data-aos="fade-up" data-aos-delay="400">
-              Seeking a Business Development Intern position to apply strong analytical, communication, and problem-solving skills. Eager to contribute to market research, client relationship management, and strategic growth initiatives while gaining hands-on industry experience.
+              Transforming raw data into intelligent solutions through cutting-edge machine learning and artificial intelligence. Specializing in AI/ML, Data Science, Data Engineering, and full-stack development with 3+ years of experience delivering production-ready solutions for international clients.
             </p>
             
             {/* Buttons and Social - Only visible on desktop, hidden on mobile */}

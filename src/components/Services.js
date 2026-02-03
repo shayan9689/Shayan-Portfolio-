@@ -1,48 +1,48 @@
 import React from 'react';
-import { FaChartLine, FaHandshake, FaUsers, FaLightbulb, FaFileExcel, FaFilePowerpoint } from 'react-icons/fa';
+import { FaRobot, FaDatabase, FaCloud, FaChartLine, FaMobileAlt, FaCode } from 'react-icons/fa';
 
 const Services = () => {
   const services = [
     {
-      icon: FaChartLine,
-      title: 'Market Research & Analysis',
-      description: 'Conducting comprehensive market research to identify opportunities, analyze trends, and provide data-driven insights. Expertise in competitive analysis, market segmentation, and strategic planning to support business growth initiatives.',
-      features: ['Market Analysis', 'Competitive Research', 'Trend Identification', 'Data Collection', 'Strategic Insights', 'Opportunity Assessment'],
+      icon: FaRobot,
+      title: 'Machine Learning & AI',
+      description: 'Development of custom machine learning models for predictive analytics, classification, pattern recognition, and intelligent automation. Expertise in deep learning, computer vision, NLP, and reinforcement learning using Python, TensorFlow, PyTorch, and advanced ML frameworks.',
+      features: ['Predictive Modeling', 'Computer Vision', 'Natural Language Processing', 'Deep Learning', 'Reinforcement Learning', 'Transfer Learning'],
       delay: 0,
     },
     {
-      icon: FaHandshake,
-      title: 'Client Relationship Management',
-      description: 'Building and maintaining strong relationships with clients through effective communication and negotiation. Focus on understanding client needs, delivering value, and fostering long-term partnerships.',
-      features: ['Client Communication', 'Negotiation', 'Relationship Building', 'Account Management', 'Customer Satisfaction', 'Partnership Development'],
+      icon: FaChartLine,
+      title: 'Data Science & Analysis',
+      description: 'Comprehensive data analysis and scientific insights extraction from complex datasets. Statistical modeling, hypothesis testing, exploratory data analysis, and advanced analytics to drive data-driven decision making across industries.',
+      features: ['Statistical Analysis', 'Exploratory Data Analysis', 'Hypothesis Testing', 'Predictive Analytics', 'Business Intelligence', 'Data Mining'],
       delay: 100,
     },
     {
-      icon: FaUsers,
-      title: 'Team Collaboration',
-      description: 'Working effectively within cross-functional teams to achieve business objectives. Strong interpersonal skills and ability to coordinate with various stakeholders to drive collaborative success.',
-      features: ['Cross-functional Teams', 'Stakeholder Management', 'Project Coordination', 'Team Communication', 'Collaborative Problem-solving', 'Leadership Support'],
+      icon: FaDatabase,
+      title: 'Data Engineering',
+      description: 'Building robust, scalable data pipelines and infrastructure for efficient data processing, transformation, and analytics. Design and implementation of ETL/ELT processes, data warehousing solutions, and big data processing systems.',
+      features: ['ETL/ELT Pipelines', 'Data Warehousing', 'Big Data Processing', 'Data Quality Assurance', 'Data Integration', 'Real-time Streaming'],
       delay: 200,
     },
     {
-      icon: FaLightbulb,
-      title: 'Strategic Problem-Solving',
-      description: 'Applying critical thinking and analytical skills to identify challenges, develop solutions, and implement strategic initiatives. Focus on data-driven decision making and innovative approaches to business problems.',
-      features: ['Critical Thinking', 'Analytical Skills', 'Solution Development', 'Strategic Planning', 'Innovation', 'Decision Making'],
+      icon: FaCloud,
+      title: 'Model Deployment & MLOps',
+      description: 'End-to-end deployment of machine learning models as scalable APIs, microservices, or web applications. Implementation of MLOps practices including CI/CD pipelines, model versioning, monitoring, and automated retraining systems.',
+      features: ['REST API Development', 'Containerization (Docker/K8s)', 'Cloud Deployment (AWS/GCP/Azure)', 'Performance Monitoring', 'Model Versioning', 'Automated Retraining'],
       delay: 300,
     },
     {
-      icon: FaFileExcel,
-      title: 'Data Management & Reporting',
-      description: 'Utilizing MS Office and Excel skills to organize data, create reports, and present insights. Ability to manage spreadsheets, analyze data, and create professional presentations for stakeholders.',
-      features: ['Excel Analysis', 'Data Organization', 'Report Creation', 'Presentation Development', 'Data Visualization', 'Documentation'],
+      icon: FaCode,
+      title: 'Web Development',
+      description: 'Full-stack web application development using modern frameworks and technologies. Building responsive, scalable web applications with React, Next.js, Tailwind CSS, and Node.js. Integration of AI capabilities into web platforms.',
+      features: ['React & Next.js', 'Tailwind CSS', 'Node.js & Express', 'RESTful APIs', 'AI Integration', 'Responsive Design'],
       delay: 400,
     },
     {
-      icon: FaFilePowerpoint,
-      title: 'Presentation & Communication',
-      description: 'Delivering compelling presentations and clear communication to various audiences. Strong presentation skills to effectively convey ideas, proposals, and strategic recommendations.',
-      features: ['Public Speaking', 'Presentation Design', 'Clear Communication', 'Stakeholder Presentations', 'Proposal Development', 'Professional Communication'],
+      icon: FaMobileAlt,
+      title: 'Mobile App Development',
+      description: 'Cross-platform mobile application development using Flutter and React Native. Creating native-feeling mobile apps with integrated AI capabilities, real-time features, and seamless user experiences.',
+      features: ['Flutter Development', 'React Native', 'Firebase Integration', 'AI/ML Integration', 'Real-time Features', 'Cross-platform Apps'],
       delay: 500,
     },
   ];
@@ -58,7 +58,7 @@ const Services = () => {
             My Services
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            Business development services focused on market research, client relations, and strategic growth
+            Comprehensive solutions across AI/ML, Data Science, Data Engineering, and Full-Stack Development
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-sm" />
         </div>

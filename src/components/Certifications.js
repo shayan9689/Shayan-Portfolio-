@@ -4,14 +4,19 @@ import { FaCertificate } from 'react-icons/fa';
 const Certifications = () => {
   const certifications = [
     {
-      title: 'Core Python',
-      description: '01/2024 - 03/2024 — Comprehensive certification covering Python programming fundamentals, data structures, algorithms, and object-oriented programming. Developed strong technical problem-solving skills.',
+      title: 'Advanced Data Science Specialization',
+      description: 'Coursera, 2023 — Comprehensive certification covering Machine Learning, Deep Learning, MLOps, and production deployment best practices. Includes hands-on projects and real-world case studies.',
       delay: 0,
     },
     {
-      title: 'MERN Stack',
-      description: '05/2024 - 11/2024 — Full-stack web development certification covering MongoDB, Express.js, React, and Node.js. Gained expertise in building modern web applications and RESTful APIs.',
+      title: 'TensorFlow Developer Certification',
+      description: 'TensorFlow Certification — Expertise in Computer Vision, Natural Language Processing, and time-series analysis with production-ready pipelines. Demonstrated proficiency in building scalable ML solutions.',
       delay: 100,
+    },
+    {
+      title: 'Cloud Practitioner Certification',
+      description: 'AWS/GCP Cloud Certification — Foundational knowledge in cloud computing, containerization, and cost-efficient deployments. Experience with cloud-based ML model hosting and data infrastructure.',
+      delay: 200,
     },
   ];
 

@@ -13,6 +13,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import ParticlesBackground from './components/ParticlesBackground';
+import Chatbot from './components/Chatbot';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ToastContainer } from 'react-toastify';
@@ -95,6 +96,7 @@ function App() {
           </main>
           <Footer />
           <BackToTop />
+          <Chatbot />
           <ToastContainer
             position="top-right"
             autoClose={5000}

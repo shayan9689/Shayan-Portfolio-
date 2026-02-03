@@ -1,22 +1,51 @@
 import React from 'react';
-import { FaBriefcase, FaBuilding } from 'react-icons/fa';
+import { FaBriefcase } from 'react-icons/fa';
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Sales Management',
-      company: 'Moscow Mart',
-      period: '04/2023 – 08/2024',
-      description: 'Managed sales operations and customer relationships at Moscow Mart in Sargodha. Developed strong skills in client communication, negotiation, and business development while contributing to the company\'s growth initiatives.',
+      title: 'General Manager & AI Engineer',
+      company: 'PropertyReply (UK-based)',
+      period: '2023 – Present',
+      description: 'Leading AI initiatives and technical operations at PropertyReply, a UK-based technology company. Collaborating with Saqib Hussain to develop and deploy innovative AI solutions for property management and real estate applications.',
       bullets: [
-        'Managed day-to-day sales operations and customer interactions',
-        'Developed and maintained strong client relationships',
-        'Applied negotiation skills to close deals and drive revenue',
-        'Contributed to strategic growth initiatives and market expansion',
-        'Gained hands-on experience in business development and sales management',
+        'Architecting and implementing end-to-end AI systems for property analytics and automation',
+        'Managing technical teams and coordinating cross-functional projects',
+        'Developing scalable ML models for real estate data analysis and prediction',
+        'Establishing best practices for AI deployment and MLOps pipelines',
+        'Driving strategic technical decisions and technology roadmap planning',
       ],
       icon: FaBriefcase,
       delay: 0,
+    },
+    {
+      title: 'AI Engineer & Data Scientist (Freelance)',
+      company: 'Fiverr & International Clients',
+      period: '2022 – Present',
+      description: 'Delivering 100+ AI/ML projects for international clients through Fiverr and long-term partnerships. Specializing in machine learning, data science, and full-stack AI integration across multiple industries.',
+      bullets: [
+        'Completed 100+ projects in AI/ML, Data Science, and Data Engineering',
+        'Developed production-ready ML models for healthcare, finance, and e-commerce',
+        'Built end-to-end data pipelines and ETL systems for large-scale data processing',
+        'Integrated AI capabilities into web and mobile applications',
+        'Maintained long-term relationships with international clients',
+      ],
+      icon: FaBriefcase,
+      delay: 100,
+    },
+    {
+      title: 'Data Science Intern',
+      company: 'Industry Internship',
+      period: 'Summer 2022',
+      description: 'Worked on predictive analytics projects, developed data pipelines, and created stakeholder-ready dashboards. Gained hands-on experience in production ML systems and data visualization.',
+      bullets: [
+        'Developed predictive models for business analytics',
+        'Performed feature engineering and data preprocessing',
+        'Created interactive dashboards for data visualization',
+        'Collaborated with cross-functional teams on data-driven solutions',
+      ],
+      icon: FaBriefcase,
+      delay: 200,
     },
   ];
 
@@ -31,7 +60,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            Professional experience in sales management and business development
+            3+ years of experience delivering AI/ML solutions and managing technical operations
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-sm" />
         </div>

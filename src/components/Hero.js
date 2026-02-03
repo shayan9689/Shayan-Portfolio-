@@ -3,10 +3,10 @@ import { FaLinkedinIn, FaGithub, FaMedium, FaTwitter } from 'react-icons/fa';
 
 const Hero = () => {
   const socialLinks = [
-    { href: 'https://www.linkedin.com/in/waqas-naveed-630297247/', icon: FaLinkedinIn, label: 'LinkedIn' },
-    { href: 'https://github.com/Waqas56jb', icon: FaGithub, label: 'GitHub' },
-    { href: 'https://medium.com/@waqas56jb', icon: FaMedium, label: 'Medium' },
-    { href: 'https://twitter.com/', icon: FaTwitter, label: 'Twitter' },
+    { href: '#', icon: FaLinkedinIn, label: 'LinkedIn' },
+    { href: '#', icon: FaGithub, label: 'GitHub' },
+    { href: '#', icon: FaMedium, label: 'Medium' },
+    { href: '#', icon: FaTwitter, label: 'Twitter' },
   ];
 
   const handleNavClick = (e, targetId) => {
@@ -31,11 +31,11 @@ const Hero = () => {
                 Hello, I'm
               </span>
               <span className="block text-primary dark:text-[#e5e7eb] font-serif font-bold">
-                Waqas Naveed
+                Shayan Umair
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 md:mb-8 max-w-[600px] mx-auto lg:mx-0 text-secondary dark:text-[#e2e8f0] leading-relaxed font-sans" data-aos="fade-up" data-aos-delay="400">
-              Transforming raw data into intelligent solutions through cutting-edge machine learning and artificial intelligence. Specializing in AI/ML, Data Science, Data Engineering, and full-stack development with 3+ years of experience delivering production-ready solutions for international clients.
+              Seeking a Business Development Intern position to apply strong analytical, communication, and problem-solving skills. Eager to contribute to market research, client relationship management, and strategic growth initiatives while gaining hands-on industry experience.
             </p>
             
             {/* Buttons and Social - Only visible on desktop, hidden on mobile */}
@@ -87,7 +87,7 @@ const Hero = () => {
                 <div className="relative w-full aspect-[5/6] overflow-hidden bg-gradient-to-br from-white to-blue-50 dark:from-[#0f172a] dark:to-[#1e293b]">
                   <img
                     src="/profile1.png"
-                    alt="Waqas Naveed"
+                    alt="Shayan Umair"
                     className="w-full h-full object-cover object-center"
                     loading="eager"
                     fetchPriority="high"

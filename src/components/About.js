@@ -11,45 +11,38 @@ const About = () => {
   ];
 
   const skillsData = [
-    { name: 'Machine Learning & AI', percentage: 95 },
-    { name: 'Data Science & Analysis', percentage: 93 },
-    { name: 'Data Engineering', percentage: 90 },
-    { name: 'Model Deployment & MLOps', percentage: 88 },
-    { name: 'Web Development (React/Next.js)', percentage: 85 },
-    { name: 'Mobile Development (Flutter/React Native)', percentage: 82 },
+    { name: 'Market Research & Analysis', percentage: 90 },
+    { name: 'Communication & Negotiation', percentage: 88 },
+    { name: 'MS Office/Excel Skills', percentage: 85 },
+    { name: 'Team Collaboration', percentage: 87 },
+    { name: 'Problem-Solving & Critical Thinking', percentage: 89 },
+    { name: 'Presentation Skills', percentage: 86 },
   ];
 
   const educationData = [
     {
-      title: 'BS Computer Science - AI Specialization',
-      period: 'FAST National University (2021-2025)',
-      description: 'Specialized in Artificial Intelligence, Machine Learning, and Data Science with focus on deep learning, NLP, and computer vision applications.',
+      title: 'Bachelor of Computer Science',
+      period: 'Lahore Leads University (03/2024 - Present)',
+      description: 'Studied key subjects including Professional Practices, Presentation Skills, and Programming, building a strong foundation in business communication and technical problem-solving.',
     },
     {
-      title: 'Advanced Data Science Certification',
-      period: 'Coursera (2023)',
-      description: 'Comprehensive certification covering ML, Deep Learning, MLOps, and production deployment best practices.',
+      title: 'Intermediate',
+      period: 'Punjab Group of Colleges (03/2021 - 07/2023)',
+      description: 'Completed intermediate education in Lahore, focusing on foundational academic subjects.',
+    },
+    {
+      title: 'Matriculation',
+      period: 'Dar-e-Arkam School (03/2019 - 10/2021)',
+      description: 'Completed matriculation education in Sargodha, establishing strong academic fundamentals.',
     },
   ];
 
   const experienceData = [
     {
-      title: 'General Manager & AI Engineer',
-      company: 'PropertyReply (UK-based)',
-      period: '2023 - Present',
-      description: 'Leading AI initiatives and managing technical operations at PropertyReply, a UK-based technology company. Collaborating with Saqib Hussain to develop and deploy AI solutions for property management and real estate applications. Responsible for end-to-end AI system development, team coordination, and strategic technical decision-making.',
-    },
-    {
-      title: 'AI Engineer & Data Scientist (Freelance)',
-      company: 'Fiverr & International Clients',
-      period: '2022 - Present',
-      description: 'Delivering 100+ AI/ML projects for international clients through Fiverr and long-term partnerships. Specializing in machine learning model development, data engineering pipelines, and full-stack AI integration. Successfully completed projects across healthcare, finance, e-commerce, and automation domains.',
-    },
-    {
-      title: 'Data Science Intern',
-      company: 'Industry Internship',
-      period: 'Summer 2022',
-      description: 'Worked on predictive analytics projects, developed data pipelines, and created stakeholder-ready dashboards. Gained hands-on experience in production ML systems and data visualization.',
+      title: 'Sales Management',
+      company: 'Moscow Mart',
+      period: '04/2023 - 08/2024',
+      description: 'Managed sales operations and customer relationships at Moscow Mart in Sargodha. Developed strong skills in client communication, negotiation, and business development while contributing to the company\'s growth initiatives.',
     },
   ];
 
@@ -70,14 +63,14 @@ const About = () => {
             <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#1e293b]">
               <img
                 src="/profile2.png"
-                alt="About Me"
+                alt="Shayan Umair"
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />
               <div className="absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 bg-gradient-to-r from-primary to-primary-dark w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white dark:border-[#0f172a]">
                 <div className="text-center">
-                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">3+</span>
-                  <span className="text-xs sm:text-sm font-medium block">Years Experience</span>
+                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">1+</span>
+                  <span className="text-xs sm:text-sm font-medium block">Year Experience</span>
                 </div>
               </div>
             </div>
@@ -87,10 +80,10 @@ const About = () => {
               Who am I?
             </h3>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
-              I'm a passionate Computer Science student specializing in AI and Data Science at FAST National University. With 3+ years of experience and 100+ completed projects, I build intelligent systems that solve real-world problems across various industries.
+              I'm a dedicated Computer Science student at Lahore Leads University, currently pursuing my Bachelor's degree. I'm passionate about applying my analytical, communication, and problem-solving skills to drive business growth and create meaningful impact.
             </p>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
-              Currently serving as General Manager & AI Engineer at PropertyReply (UK-based), I collaborate with industry leaders to develop cutting-edge AI solutions. I also actively freelance on Fiverr and maintain long-term partnerships with international clients, delivering end-to-end AI/ML solutions, web applications, and mobile apps using React, Next.js, Tailwind CSS, Flutter, and React Native.
+              With experience in Sales Management at Moscow Mart and a strong foundation in business communication and technical problem-solving, I'm eager to contribute to market research, client relationship management, and strategic growth initiatives as a Business Development Intern.
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8">
               {tabs.map((tab) => {

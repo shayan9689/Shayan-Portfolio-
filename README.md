@@ -122,7 +122,7 @@ Personal-portfolio-website/
 ## 📝 Important Notes
 
 - **Profile Image**: Place `profile2.png` in the `public/` folder
-- **CV File**: Place `Rana Waqas Naveed Data Science CV.pdf` in `public/assets/` folder
+- **CV File**: Place `Shayan Umair-Business Development Intern.pdf` in `public/assets/` folder
 - **All Content**: Updated with latest projects, experience, and achievements
 - **Responsive Design**: Fully optimized for all screen sizes
 - **Theme**: Professional blue and white color scheme

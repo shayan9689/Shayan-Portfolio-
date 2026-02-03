@@ -1,67 +1,21 @@
 import React from 'react';
-import { FaBrain, FaDatabase, FaServer, FaLaptopCode } from 'react-icons/fa';
+import { FaChartLine, FaHandshake, FaFileExcel, FaUsers, FaLightbulb, FaFilePowerpoint } from 'react-icons/fa';
 
 const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Data Science & AI',
-      icon: FaBrain,
+      title: 'Business Development Skills',
+      icon: FaChartLine,
       skills: [
-        { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', percentage: 95 },
-        { name: 'Pandas/Numpy', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', percentage: 92 },
-        { name: 'TensorFlow/Keras', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', percentage: 90 },
-        { name: 'PyTorch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg', percentage: 85 },
-        { name: 'Scikit-learn', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg', percentage: 88 },
+        { name: 'Market Research & Analysis', icon: '', percentage: 90 },
+        { name: 'Communication & Negotiation', icon: '', percentage: 88 },
+        { name: 'MS Office/Excel Skills', icon: '', percentage: 85 },
+        { name: 'Team Collaboration', icon: '', percentage: 87 },
+        { name: 'Problem-Solving & Critical Thinking', icon: '', percentage: 89 },
+        { name: 'Presentation Skills', icon: '', percentage: 86 },
       ],
       delay: 0,
-    },
-    {
-      title: 'Data Analysis & Engineering',
-      icon: FaDatabase,
-      skills: [
-        { name: 'Data Analysis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', percentage: 93 },
-        { name: 'Apache Spark', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg', percentage: 88 },
-        { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', percentage: 90 },
-        { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', percentage: 85 },
-        { name: 'AWS/GCP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg', percentage: 80 },
-      ],
-      delay: 100,
-    },
-    {
-      title: 'Model Deployment & MLOps',
-      icon: FaServer,
-      skills: [
-        { name: 'Flask/FastAPI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg', percentage: 90 },
-        { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', percentage: 85 },
-        { name: 'Kubernetes', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', percentage: 75 },
-        { name: 'Azure ML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', percentage: 80 },
-        { name: 'MLflow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', percentage: 82 },
-      ],
-      delay: 200,
-    },
-    {
-      title: 'Web Development',
-      icon: FaLaptopCode,
-      skills: [
-        { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', percentage: 85 },
-        { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', percentage: 83 },
-        { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg', percentage: 88 },
-        { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', percentage: 80 },
-        { name: 'JavaScript/TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', percentage: 85 },
-      ],
-      delay: 300,
-    },
-    {
-      title: 'Mobile Development',
-      icon: FaLaptopCode,
-      skills: [
-        { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg', percentage: 82 },
-        { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', percentage: 80 },
-        { name: 'Expo', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', percentage: 78 },
-        { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg', percentage: 85 },
-      ],
-      delay: 400,
     },
   ];
 
@@ -73,14 +27,14 @@ const Skills = () => {
             Technical Expertise
           </h4>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] mb-3 sm:mb-4 text-dark dark:text-[#e5e7eb]">
-            Skills & Technologies
+            Skills & Expertise
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            Comprehensive expertise across AI/ML, Data Science, Data Engineering, and Full-Stack Development
+            Strong foundation in business development, market research, communication, and problem-solving
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary via-primary-light to-primary-dark mx-auto rounded-sm" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 sm:gap-8 max-w-2xl mx-auto">
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
@@ -101,31 +55,45 @@ const Skills = () => {
                 </div>
                 {/* Skills List - Text-Based Design */}
                 <div className="flex flex-col gap-3 sm:gap-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div
-                      key={skillIndex}
-                      className="group/skill bg-gradient-to-r from-blue-50/50 via-white to-blue-50/30 dark:from-[#0b1220] dark:via-[#0f172a] dark:to-[#0b1220] p-4 sm:p-5 rounded-lg border-l-4 border-primary/30 dark:border-primary/40 hover:border-primary dark:hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-x-1"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex-1">
-                          <h4 className="text-sm sm:text-base font-bold text-dark dark:text-[#e5e7eb] mb-1 group-hover/skill:text-primary transition-colors">
-                            {skill.name}
-                          </h4>
-                          <div className="flex items-center gap-2">
-                            <div className="flex-1 h-2 bg-blue-100 dark:bg-[#0b1220] rounded-full overflow-hidden">
-                              <div 
-                                className="h-full bg-gradient-to-r from-primary via-primary-light to-primary-dark rounded-full transition-all duration-1000"
-                                style={{ width: `${skill.percentage}%` }}
-                              />
+                  {category.skills.map((skill, skillIndex) => {
+                    const skillIcons = {
+                      'Market Research & Analysis': FaChartLine,
+                      'Communication & Negotiation': FaHandshake,
+                      'MS Office/Excel Skills': FaFileExcel,
+                      'Team Collaboration': FaUsers,
+                      'Problem-Solving & Critical Thinking': FaLightbulb,
+                      'Presentation Skills': FaFilePowerpoint,
+                    };
+                    const SkillIcon = skillIcons[skill.name] || FaChartLine;
+                    return (
+                      <div
+                        key={skillIndex}
+                        className="group/skill bg-gradient-to-r from-blue-50/50 via-white to-blue-50/30 dark:from-[#0b1220] dark:via-[#0f172a] dark:to-[#0b1220] p-4 sm:p-5 rounded-lg border-l-4 border-primary/30 dark:border-primary/40 hover:border-primary dark:hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-x-1"
+                      >
+                        <div className="flex items-center justify-between gap-4">
+                          <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                            <SkillIcon />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-sm sm:text-base font-bold text-dark dark:text-[#e5e7eb] mb-1 group-hover/skill:text-primary transition-colors">
+                              {skill.name}
+                            </h4>
+                            <div className="flex items-center gap-2">
+                              <div className="flex-1 h-2 bg-blue-100 dark:bg-[#0b1220] rounded-full overflow-hidden">
+                                <div 
+                                  className="h-full bg-gradient-to-r from-primary via-primary-light to-primary-dark rounded-full transition-all duration-1000"
+                                  style={{ width: `${skill.percentage}%` }}
+                                />
+                              </div>
+                              <span className="text-xs sm:text-sm font-bold text-primary min-w-[3rem] text-right">
+                                {skill.percentage}%
+                              </span>
                             </div>
-                            <span className="text-xs sm:text-sm font-bold text-primary min-w-[3rem] text-right">
-                              {skill.percentage}%
-                            </span>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             );

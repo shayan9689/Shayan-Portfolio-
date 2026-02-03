@@ -57,10 +57,10 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { href: 'https://www.linkedin.com/in/waqas-naveed-630297247/', icon: FaLinkedinIn, label: 'LinkedIn' },
-    { href: 'https://github.com/Waqas56jb', icon: FaGithub, label: 'GitHub' },
-    { href: 'https://medium.com/@waqas56jb', icon: FaMedium, label: 'Medium' },
-    { href: 'https://twitter.com/', icon: FaTwitter, label: 'Twitter' },
+    { href: '#', icon: FaLinkedinIn, label: 'LinkedIn' },
+    { href: '#', icon: FaGithub, label: 'GitHub' },
+    { href: '#', icon: FaMedium, label: 'Medium' },
+    { href: '#', icon: FaTwitter, label: 'Twitter' },
   ];
 
   return (
@@ -74,7 +74,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            Available for freelance projects, long-term collaborations, and full-time opportunities
+            Seeking Business Development Intern opportunities and open to collaborations
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-sm" />
         </div>
@@ -84,7 +84,7 @@ const Contact = () => {
               Let's talk about your project
             </h3>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base text-accent dark:text-[#94a3b8] leading-relaxed">
-              I'm available for freelance work, long-term international client partnerships, and full-time positions. Whether you need AI/ML solutions, data engineering, web development, or mobile applications, feel free to reach out. I specialize in delivering production-ready solutions that drive business value.
+              I'm seeking a Business Development Intern position to apply my strong analytical, communication, and problem-solving skills. I'm eager to contribute to market research, client relationship management, and strategic growth initiatives while gaining hands-on industry experience. Feel free to reach out for opportunities!
             </p>
             <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
               <div className="flex items-start gap-4">
@@ -94,10 +94,10 @@ const Contact = () => {
                 <div>
                   <h4 className="text-base sm:text-lg mb-1 text-dark dark:text-[#e5e7eb] font-semibold">Email</h4>
                   <a
-                    href="mailto:waqas56jb@gmail.com"
+                    href="mailto:shayan.umairadditise@gmail.com"
                     className="text-sm sm:text-base text-accent dark:text-[#94a3b8] hover:text-primary transition-colors"
                   >
-                    waqas56jb@gmail.com
+                    shayan.umairadditise@gmail.com
                   </a>
                 </div>
               </div>
@@ -108,10 +108,10 @@ const Contact = () => {
                 <div>
                   <h4 className="text-base sm:text-lg mb-1 text-dark dark:text-[#e5e7eb] font-semibold">Phone</h4>
                   <a
-                    href="tel:+92477603854"
+                    href="tel:+923107679332"
                     className="text-sm sm:text-base text-accent dark:text-[#94a3b8] hover:text-primary transition-colors"
                   >
-                    +92 477 603854
+                    +92 310 7679332
                   </a>
                 </div>
               </div>
@@ -121,8 +121,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg mb-1 text-dark dark:text-[#e5e7eb] font-semibold">Location</h4>
-                  <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8]">Faisalabad, Pakistan</p>
-                  <p className="text-xs sm:text-sm text-accent dark:text-[#94a3b8] mt-1">Available for Remote Work Worldwide</p>
+                  <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8]">Ashraf & Sons Heights, Johar Town, LHR</p>
+                  <p className="text-xs sm:text-sm text-accent dark:text-[#94a3b8] mt-1">Lahore, Pakistan</p>
                 </div>
               </div>
             </div>

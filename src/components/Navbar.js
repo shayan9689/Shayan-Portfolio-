@@ -95,7 +95,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           className="text-xl sm:text-2xl lg:text-[1.8rem] font-bold text-dark dark:text-[#e5e7eb] font-serif flex items-center hover:text-primary transition-colors"
           data-aos="fade-right"
         >
-          <span>WN</span>
+          <span>SU</span>
           <span className="text-primary">.</span>
         </a>
 

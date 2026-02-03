@@ -53,7 +53,7 @@ const Footer = () => {
               }}
               className="flex items-center gap-1 text-[1.8rem] font-bold font-serif text-white hover:text-primary transition-colors"
             >
-              <span>WN</span>
+              <span>SU</span>
               <span className="text-primary">.</span>
             </a>
             <p className="text-[#94a3b8] text-sm leading-relaxed">

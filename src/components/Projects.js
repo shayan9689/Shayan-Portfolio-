@@ -283,10 +283,10 @@ const Projects = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-125"
                     loading="lazy"
                   />
-                  {/* 3+ Years Experience Badge - Blue Color */}
+                  {/* 1+ Year Experience Badge - Blue Color */}
                   <div className="absolute top-3 left-3 bg-primary text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-lg flex items-center gap-1.5 sm:gap-2 z-10 border-2 border-white/20">
-                    <span className="text-xs sm:text-sm font-bold">3+</span>
-                    <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap">Years Experience</span>
+                    <span className="text-xs sm:text-sm font-bold">1+</span>
+                    <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap">Year Experience</span>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                     <a

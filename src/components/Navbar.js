@@ -120,7 +120,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
             </a>
           ))}
           <a
-            href="/assets/Rana Waqas Naveed Data Science CV.pdf"
+            href="/assets/Shayan-umair-Resume.pdf"
             download
             className="btn-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg font-semibold text-xs sm:text-[0.85rem] md:text-[0.9rem] bg-primary text-white border-2 border-primary hover:bg-primary-dark hover:border-primary-dark hover:-translate-y-0.5 hover:shadow-md transition-all whitespace-nowrap mt-2 lg:mt-0 ml-0 lg:ml-2 w-full sm:w-auto text-center"
             data-aos="fade-down"

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-import { FaLinkedinIn, FaGithub, FaMedium, FaPaperPlane } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaPaperPlane } from 'react-icons/fa';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -37,7 +37,6 @@ const Footer = () => {
   const socialLinks = [
     { href: 'https://www.linkedin.com/in/shayan-umair-3b2577225/', icon: FaLinkedinIn, label: 'LinkedIn' },
     { href: 'https://github.com/shayan9689', icon: FaGithub, label: 'GitHub' },
-    { href: 'https://medium.com/@waqas56jb', icon: FaMedium, label: 'Medium' },
   ];
 
   return (
@@ -57,7 +56,7 @@ const Footer = () => {
               <span className="text-primary">.</span>
             </a>
             <p className="text-[#94a3b8] text-sm leading-relaxed">
-              AI Engineer & Data Scientist with 3+ years of experience, delivering 100+ AI/ML projects. Creating intelligent solutions through cutting-edge technology for international clients.
+              Business Development professional with 1+ year of experience. Creating intelligent solutions through cutting-edge technology for international clients.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => {
@@ -143,7 +142,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center pt-5 border-t border-white/10 gap-4 sm:gap-0 text-center sm:text-left">
           <p className="text-[#94a3b8] text-xs sm:text-sm">
-            &copy; 2025 Shayan Umair. All Rights Reserved. | General Manager & AI Engineer at PropertyReply (UK)
+            &copy; 2025 Shayan Umair. All Rights Reserved.
           </p>
           <div className="flex gap-4 sm:gap-5 justify-center">
             <button type="button" className="text-[#94a3b8] text-xs hover:text-primary transition-colors bg-transparent border-none cursor-pointer">

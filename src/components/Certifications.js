@@ -5,7 +5,7 @@ const Certifications = () => {
   const certifications = [
     {
       title: 'Advanced Data Science Specialization',
-      description: 'Coursera, 2023 — Comprehensive certification covering Machine Learning, Deep Learning, MLOps, and production deployment best practices. Includes hands-on projects and real-world case studies.',
+      description: 'Coursera, 2024 — Comprehensive certification covering Machine Learning, Deep Learning, MLOps, and production deployment best practices. Includes hands-on projects and real-world case studies.',
       delay: 0,
     },
     {

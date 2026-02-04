@@ -22,33 +22,27 @@ const About = () => {
   const educationData = [
     {
       title: 'BS Computer Science - AI Specialization',
-      period: 'FAST National University (2021-2025)',
+      period: 'Lahore Leads University (2024-Present)',
       description: 'Specialized in Artificial Intelligence, Machine Learning, and Data Science with focus on deep learning, NLP, and computer vision applications.',
     },
     {
       title: 'Advanced Data Science Certification',
-      period: 'Coursera (2023)',
+      period: 'Coursera (2024)',
       description: 'Comprehensive certification covering ML, Deep Learning, MLOps, and production deployment best practices.',
     },
   ];
 
   const experienceData = [
     {
-      title: 'General Manager & AI Engineer',
-      company: 'PropertyReply (UK-based)',
-      period: '2023 - Present',
-      description: 'Leading AI initiatives and managing technical operations at PropertyReply, a UK-based technology company. Collaborating with Saqib Hussain to develop and deploy AI solutions for property management and real estate applications. Responsible for end-to-end AI system development, team coordination, and strategic technical decision-making.',
-    },
-    {
       title: 'AI Engineer & Data Scientist (Freelance)',
       company: 'Fiverr & International Clients',
-      period: '2022 - Present',
+      period: '2024 - Present',
       description: 'Delivering 100+ AI/ML projects for international clients through Fiverr and long-term partnerships. Specializing in machine learning model development, data engineering pipelines, and full-stack AI integration. Successfully completed projects across healthcare, finance, e-commerce, and automation domains.',
     },
     {
-      title: 'Data Science Intern',
+      title: 'Data Science (Freelance)',
       company: 'Industry Internship',
-      period: 'Summer 2022',
+      period: 'Summer',
       description: 'Worked on predictive analytics projects, developed data pipelines, and created stakeholder-ready dashboards. Gained hands-on experience in production ML systems and data visualization.',
     },
   ];
@@ -76,8 +70,8 @@ const About = () => {
               />
               <div className="absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 bg-gradient-to-r from-primary to-primary-dark w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white dark:border-[#0f172a]">
                 <div className="text-center">
-                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">3+</span>
-                  <span className="text-xs sm:text-sm font-medium block">Years Experience</span>
+                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">1+</span>
+                  <span className="text-xs sm:text-sm font-medium block">Year Experience</span>
                 </div>
               </div>
             </div>
@@ -87,10 +81,10 @@ const About = () => {
               Who am I?
             </h3>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
-              I'm a passionate Computer Science student specializing in AI and Data Science at FAST National University. With 3+ years of experience and 100+ completed projects, I build intelligent systems that solve real-world problems across various industries.
+              I'm a passionate Computer Science student specializing in AI and Data Science at Lahore Leads University. With 1+ year of experience, I build intelligent systems that solve real-world problems across various industries.
             </p>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
-              Currently serving as General Manager & AI Engineer at PropertyReply (UK-based), I collaborate with industry leaders to develop cutting-edge AI solutions. I also actively freelance on Fiverr and maintain long-term partnerships with international clients, delivering end-to-end AI/ML solutions, web applications, and mobile apps using React, Next.js, Tailwind CSS, Flutter, and React Native.
+              I actively freelance and maintain partnerships with international clients, delivering solutions across web applications and mobile apps using React, Next.js, Tailwind CSS, Flutter, and React Native.
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-8">
               {tabs.map((tab) => {

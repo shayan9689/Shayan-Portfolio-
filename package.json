@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio-website",
   "version": "1.0.0",
-  "description": "Waqas Naveed's Portfolio - React & Tailwind",
+  "description": "Shayan Umair's Portfolio - React & Tailwind",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

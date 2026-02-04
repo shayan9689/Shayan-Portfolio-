@@ -1,4 +1,4 @@
-# Waqas Naveed - AI Engineer & Data Scientist Portfolio (React + Tailwind)
+# Shayan Umair - Portfolio (React + Tailwind)
 
 A comprehensive, professional portfolio website built with React and Tailwind CSS, showcasing 100+ AI/ML projects, expertise in Data Science, Data Engineering, and Full-Stack Development.
 
@@ -73,9 +73,8 @@ Personal-portfolio-website/
 ## 🎨 Key Highlights
 
 ### Professional Experience
-- **General Manager & AI Engineer** at PropertyReply (UK-based) - 2023 to Present
 - **AI Engineer & Data Scientist** (Freelance) - 100+ projects delivered
-- **3+ Years** of professional experience
+- **1+ Year** of professional experience
 
 ### Expertise Areas
 - **AI/ML**: Machine Learning, Deep Learning, Computer Vision, NLP
@@ -122,7 +121,7 @@ Personal-portfolio-website/
 ## 📝 Important Notes
 
 - **Profile Image**: Place `profile2.png` in the `public/` folder
-- **CV File**: Place `Rana Waqas Naveed Data Science CV.pdf` in `public/assets/` folder
+- **CV File**: Place `Shayan-umair-Resume.pdf` in `public/assets/` folder
 - **All Content**: Updated with latest projects, experience, and achievements
 - **Responsive Design**: Fully optimized for all screen sizes
 - **Theme**: Professional blue and white color scheme
@@ -130,19 +129,17 @@ Personal-portfolio-website/
 
 ## 📧 Contact
 
-- **Email**: waqas56jb@gmail.com
-- **Phone**: +92 477 603854
-- **Location**: Faisalabad, Pakistan (Available for Remote Work Worldwide)
-- **LinkedIn**: [Waqas Naveed](https://www.linkedin.com/in/waqas-naveed-630297247/)
-- **GitHub**: [Waqas56jb](https://github.com/Waqas56jb)
-- **Medium**: [@waqas56jb](https://medium.com/@waqas56jb)
+- **Email**: shayan19609@gmail.com
+- **Phone**: +92 310 7679332
+- **Location**: Gulburg Sargodha, Pakistan
+- **LinkedIn**: [Shayan Umair](https://www.linkedin.com/in/shayan-umair-3b2577225/)
+- **GitHub**: [shayan9689](https://github.com/shayan9689)
 
-## 🏢 Current Role
+## 🎯 About
 
-**General Manager & AI Engineer** at PropertyReply (UK-based)
-- Collaborating with Saqib Hussain
-- Leading AI initiatives and technical operations
-- Developing innovative solutions for property management
+**Shayan Umair** - Business Development Intern candidate
+- Strong analytical, communication, and problem-solving skills
+- Eager to contribute to market research and strategic growth initiatives
 
 ---
 

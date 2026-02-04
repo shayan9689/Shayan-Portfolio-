@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedinIn, FaGithub, FaMedium, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -77,8 +77,6 @@ const Contact = () => {
   const socialLinks = [
     { href: 'https://www.linkedin.com/in/shayan-umair-3b2577225/', icon: FaLinkedinIn, label: 'LinkedIn' },
     { href: 'https://github.com/shayan9689', icon: FaGithub, label: 'GitHub' },
-    { href: 'https://medium.com/@waqas56jb', icon: FaMedium, label: 'Medium' },
-    { href: 'https://twitter.com/', icon: FaTwitter, label: 'Twitter' },
   ];
 
   return (

@@ -4,24 +4,9 @@ import { FaBriefcase } from 'react-icons/fa';
 const Experience = () => {
   const experiences = [
     {
-      title: 'General Manager & AI Engineer',
-      company: 'PropertyReply (UK-based)',
-      period: '2023 – Present',
-      description: 'Leading AI initiatives and technical operations at PropertyReply, a UK-based technology company. Collaborating with Saqib Hussain to develop and deploy innovative AI solutions for property management and real estate applications.',
-      bullets: [
-        'Architecting and implementing end-to-end AI systems for property analytics and automation',
-        'Managing technical teams and coordinating cross-functional projects',
-        'Developing scalable ML models for real estate data analysis and prediction',
-        'Establishing best practices for AI deployment and MLOps pipelines',
-        'Driving strategic technical decisions and technology roadmap planning',
-      ],
-      icon: FaBriefcase,
-      delay: 0,
-    },
-    {
       title: 'AI Engineer & Data Scientist (Freelance)',
       company: 'Fiverr & International Clients',
-      period: '2022 – Present',
+      period: '2024 – Present',
       description: 'Delivering 100+ AI/ML projects for international clients through Fiverr and long-term partnerships. Specializing in machine learning, data science, and full-stack AI integration across multiple industries.',
       bullets: [
         'Completed 100+ projects in AI/ML, Data Science, and Data Engineering',
@@ -31,12 +16,12 @@ const Experience = () => {
         'Maintained long-term relationships with international clients',
       ],
       icon: FaBriefcase,
-      delay: 100,
+      delay: 0,
     },
     {
-      title: 'Data Science Intern',
+      title: 'Data Science (Freelance)',
       company: 'Industry Internship',
-      period: 'Summer 2022',
+      period: 'Summer',
       description: 'Worked on predictive analytics projects, developed data pipelines, and created stakeholder-ready dashboards. Gained hands-on experience in production ML systems and data visualization.',
       bullets: [
         'Developed predictive models for business analytics',
@@ -45,7 +30,7 @@ const Experience = () => {
         'Collaborated with cross-functional teams on data-driven solutions',
       ],
       icon: FaBriefcase,
-      delay: 200,
+      delay: 100,
     },
   ];
 
@@ -60,7 +45,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            3+ years of experience delivering AI/ML solutions and managing technical operations
+            1+ year of professional experience in sales and business development
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-sm" />
         </div>

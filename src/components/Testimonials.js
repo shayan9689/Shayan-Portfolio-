@@ -4,19 +4,19 @@ import { FaQuoteLeft } from 'react-icons/fa';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: '"Waqas delivered a robust ML pipeline and deployed it seamlessly to production. Outstanding quality and attention to detail. The solution exceeded our expectations and has been running flawlessly since deployment."',
+      quote: '"Shayan delivered a robust ML pipeline and deployed it seamlessly to production. Outstanding quality and attention to detail. The solution exceeded our expectations and has been running flawlessly since deployment."',
       name: 'Product Lead',
       role: 'HealthTech Startup',
       delay: 0,
     },
     {
-      quote: '"Great communication and engineering rigor. The model exceeded our accuracy targets and the integration was smooth. Waqas is professional, reliable, and delivers on time. Highly recommended for AI/ML projects."',
+      quote: '"Great communication and engineering rigor. The model exceeded our accuracy targets and the integration was smooth. Shayan is professional, reliable, and delivers on time. Highly recommended for AI/ML projects."',
       name: 'CTO',
       role: 'FinTech Company',
       delay: 100,
     },
     {
-      quote: '"Working with Waqas on our data engineering project was excellent. He built scalable pipelines that handle millions of records daily. His expertise in both data science and software engineering is impressive."',
+      quote: '"Working with Shayan on our data engineering project was excellent. He built scalable pipelines that handle millions of records daily. His expertise in both data science and software engineering is impressive."',
       name: 'Data Engineering Manager',
       role: 'E-commerce Platform',
       delay: 200,

@@ -208,7 +208,7 @@ const Projects = () => {
   }, [visibleProjects]);
 
   return (
-    <section id="projects" className="section-padding bg-gradient-to-b from-white via-blue-50/20 to-white dark:from-[#0b1220] dark:via-[#0f172a] dark:to-[#0b1220]">
+    <section id="projects" className="section-padding bg-gradient-to-b from-white via-gray-100/50 to-white dark:from-darkGray dark:via-darkGray-card dark:to-darkGray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -230,7 +230,7 @@ const Projects = () => {
               className={`px-3 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm md:text-base font-medium cursor-pointer transition-all border-none outline-none ${
                 activeFilter === filter.id
                   ? 'bg-primary text-white shadow-lg transform scale-105'
-                  : 'bg-white dark:bg-[#0f172a] text-accent dark:text-[#cbd5e1] hover:bg-blue-50 dark:hover:bg-[#1e293b] border border-blue-100 dark:border-blue-900/30'
+                  : 'bg-white dark:bg-darkGray-card text-accent dark:text-[#cbd5e1] hover:bg-gray-50 dark:hover:bg-darkGray-section border border-gray-200 dark:border-darkGray-border'
               }`}
             >
               {filter.label}
@@ -243,7 +243,7 @@ const Projects = () => {
           {canScrollLeft && (
             <button
               onClick={() => scroll('left')}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-[#0f172a] rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-darkGray-card rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
               aria-label="Scroll left"
             >
               <FaChevronLeft className="text-lg" />
@@ -252,7 +252,7 @@ const Projects = () => {
           {canScrollRight && (
             <button
               onClick={() => scroll('right')}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-[#0f172a] rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-darkGray-card rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
               aria-label="Scroll right"
             >
               <FaChevronRight className="text-lg" />
@@ -272,7 +272,7 @@ const Projects = () => {
             {visibleProjects.map((project, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-[#0f172a] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 border-blue-100 dark:border-blue-900/30 group flex-shrink-0 w-[85vw] sm:w-[400px] md:w-[450px] lg:w-[500px]"
+                className="bg-white dark:bg-darkGray-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 border-gray-200 dark:border-darkGray-border group flex-shrink-0 w-[85vw] sm:w-[400px] md:w-[450px] lg:w-[500px]"
                 data-aos="fade-up"
                 data-aos-delay={project.delay}
               >
@@ -285,7 +285,7 @@ const Projects = () => {
                   />
                   {/* 1+ Year Experience Badge - Blue Color */}
                   <div className="absolute top-3 left-3 bg-primary text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-lg flex items-center gap-1.5 sm:gap-2 z-10 border-2 border-white/20">
-                    <span className="text-xs sm:text-sm font-bold">1+</span>
+                    <span className="text-xs sm:text-sm font-bold">1.5+</span>
                     <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap">Year Experience</span>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
@@ -299,7 +299,7 @@ const Projects = () => {
                     </a>
                   </div>
                   {project.progress && (
-                    <div className="absolute top-3 right-3 bg-white/90 dark:bg-[#0f172a]/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-2 shadow-lg">
+                    <div className="absolute top-3 right-3 bg-white/90 dark:bg-darkGray-card/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-2 shadow-lg">
                       <FaChartLine className="text-primary text-xs" />
                       <span className="text-xs font-bold text-primary">{project.progress}%</span>
                     </div>
@@ -310,7 +310,7 @@ const Projects = () => {
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="bg-primary/10 dark:bg-primary/20 text-primary dark:text-blue-400 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-semibold border border-primary/30 dark:border-primary/40"
+                      className="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-semibold border border-primary/30 dark:border-primary/40"
                     >
                       {tag}
                     </span>
@@ -323,7 +323,7 @@ const Projects = () => {
                   {project.description}
                 </p>
                 {project.milestones && (
-                  <div className="mb-4 pb-4 border-b border-blue-100 dark:border-blue-900/30">
+                  <div className="mb-4 pb-4 border-b border-gray-200 dark:border-darkGray-border">
                     <div className="flex items-center gap-2 mb-2">
                       <FaRocket className="text-primary text-xs" />
                       <span className="text-xs font-semibold text-dark dark:text-[#e5e7eb]">Milestones</span>
@@ -344,7 +344,7 @@ const Projects = () => {
                       <span className="text-xs font-semibold text-dark dark:text-[#e5e7eb]">Progress</span>
                       <span className="text-xs font-bold text-primary">{project.progress}%</span>
                     </div>
-                    <div className="h-2 bg-blue-50 dark:bg-[#0b1220] rounded-full overflow-hidden">
+                    <div className="h-2 bg-gray-200 dark:bg-darkGray rounded-full overflow-hidden">
                       <div
                         className="h-full bg-gradient-to-r from-primary via-primary-light to-primary-dark rounded-full transition-all duration-1000"
                         style={{ width: `${project.progress}%` }}
@@ -375,7 +375,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="text-center mt-12 sm:mt-16" data-aos="fade-up">
-          <div className="inline-flex items-center gap-3 bg-white dark:bg-[#0f172a] px-6 py-4 rounded-xl shadow-lg border-2 border-primary/20">
+          <div className="inline-flex items-center gap-3 bg-white dark:bg-darkGray-card px-6 py-4 rounded-xl shadow-lg border-2 border-primary/20">
             <FaCode className="text-primary text-xl" />
             <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8]">
               <span className="font-bold text-primary">100+ Projects</span> completed across AI/ML, Data Science, Web Development, and Mobile Applications

@@ -21,7 +21,7 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="section-padding bg-white dark:bg-[#0b1220]">
+    <section id="certifications" className="section-padding bg-white dark:bg-darkGray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -39,7 +39,7 @@ const Certifications = () => {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-[#0f172a] rounded-xl shadow-md hover:shadow-xl p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1.5 border border-blue-100 dark:border-blue-900/30"
+              className="bg-white dark:bg-darkGray-card rounded-xl shadow-md hover:shadow-xl p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1.5 border border-gray-200 dark:border-darkGray-border"
               data-aos="fade-up"
               data-aos-delay={cert.delay}
             >

@@ -24,7 +24,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="section-padding bg-gradient-to-b from-blue-50/30 to-white dark:from-[#0f172a] dark:to-[#0b1220]">
+    <section id="testimonials" className="section-padding bg-gradient-to-b from-gray-100/80 to-white dark:from-darkGray-card dark:to-darkGray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -42,7 +42,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-[#0f172a] rounded-xl shadow-md hover:shadow-xl p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 border border-blue-100 dark:border-blue-900/30 relative"
+              className="bg-white dark:bg-darkGray-card rounded-xl shadow-md hover:shadow-xl p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-darkGray-border relative"
               data-aos="fade-up"
               data-aos-delay={testimonial.delay}
             >
@@ -52,7 +52,7 @@ const Testimonials = () => {
               <p className="italic text-sm sm:text-base text-secondary dark:text-[#e2e8f0] mb-4 sm:mb-5 leading-relaxed relative z-10">
                 {testimonial.quote}
               </p>
-              <div className="flex flex-col text-accent dark:text-[#94a3b8] pt-4 border-t border-blue-100 dark:border-blue-900/30">
+              <div className="flex flex-col text-accent dark:text-[#94a3b8] pt-4 border-t border-gray-200 dark:border-darkGray-border">
                 <span className="font-semibold text-base sm:text-lg text-dark dark:text-[#e5e7eb] mb-1">{testimonial.name}</span>
                 <span className="text-sm">{testimonial.role}</span>
               </div>

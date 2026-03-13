@@ -35,7 +35,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding bg-gradient-to-b from-blue-50/30 to-white dark:from-[#0f172a] dark:to-[#0b1220]">
+    <section id="experience" className="section-padding bg-gradient-to-b from-gray-100/80 to-white dark:from-darkGray-card dark:to-darkGray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -45,7 +45,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            1+ year of professional experience in sales and business development
+            1.5+ years of professional experience in sales and business development
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-sm" />
         </div>
@@ -60,17 +60,17 @@ const Experience = () => {
                 data-aos="fade-up"
                 data-aos-delay={exp.delay}
               >
-                <div className="absolute -left-[2px] sm:-left-[3px] top-1.5 sm:top-2 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-primary rounded-full shadow-[0_0_0_4px_rgba(37,99,235,0.15)] flex items-center justify-center border-2 border-white dark:border-[#0f172a]" aria-hidden="true">
+                <div className="absolute -left-[2px] sm:-left-[3px] top-1.5 sm:top-2 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-primary rounded-full shadow-[0_0_0_4px_rgba(184,115,51,0.25)] flex items-center justify-center border-2 border-white dark:border-darkGray-card" aria-hidden="true">
                   <IconComponent className="text-white text-xs" />
                 </div>
-                <div className="bg-white dark:bg-[#0f172a] rounded-xl shadow-md hover:shadow-lg p-5 sm:p-6 border border-blue-100 dark:border-blue-900/30 transition-all">
+                <div className="bg-white dark:bg-darkGray-card rounded-xl shadow-md hover:shadow-lg p-5 sm:p-6 border border-gray-200 dark:border-darkGray-border transition-all">
                   <div className="flex items-start gap-3 sm:gap-4 mb-3">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                       <IconComponent className="text-lg sm:text-xl" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg sm:text-xl mb-1 sm:mb-1.5 text-dark dark:text-[#e5e7eb] font-semibold">{exp.title}</h3>
-                      <p className="text-sm sm:text-base text-primary dark:text-blue-400 font-medium mb-1">{exp.company}</p>
+                      <p className="text-sm sm:text-base text-primary dark:text-primary font-medium mb-1">{exp.company}</p>
                       <span className="text-xs sm:text-sm text-accent dark:text-[#94a3b8] inline-block mb-2 sm:mb-2.5">{exp.period}</span>
                     </div>
                   </div>

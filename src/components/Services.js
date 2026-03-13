@@ -48,7 +48,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-gradient-to-b from-blue-50/30 to-white dark:from-[#0f172a] dark:to-[#0b1220]">
+    <section id="services" className="section-padding bg-gradient-to-b from-gray-100/80 to-white dark:from-darkGray-card dark:to-darkGray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -68,7 +68,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="bg-white dark:bg-[#0f172a] p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden z-10 group hover:-translate-y-2.5 border border-blue-100 dark:border-blue-900/30"
+                className="bg-white dark:bg-darkGray-card p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden z-10 group hover:-translate-y-2.5 border border-gray-200 dark:border-darkGray-border"
                 data-aos="fade-up"
                 data-aos-delay={service.delay}
               >

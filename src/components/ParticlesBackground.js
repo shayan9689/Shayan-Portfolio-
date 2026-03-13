@@ -193,7 +193,7 @@ const ParticlesBackground = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  return <div id="particles-js" className="fixed top-0 left-0 w-full h-full -z-10 bg-light dark:bg-[#0b1220]" />;
+  return <div id="particles-js" className="fixed top-0 left-0 w-full h-full -z-10 bg-light dark:bg-darkGray" />;
 };
 
 export default ParticlesBackground;

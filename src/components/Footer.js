@@ -40,7 +40,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-dark dark:bg-[#0b1220] text-white py-20 pb-5">
+    <footer className="bg-dark dark:bg-darkGray text-white py-20 pb-5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-12 sm:mb-16">
           <div className="flex flex-col gap-5">
@@ -56,7 +56,7 @@ const Footer = () => {
               <span className="text-primary">.</span>
             </a>
             <p className="text-[#94a3b8] text-sm leading-relaxed">
-              Business Development professional with 1+ year of experience. Creating intelligent solutions through cutting-edge technology for international clients.
+              Business Development professional with 1.5+ years of experience. Creating intelligent solutions through cutting-edge technology for international clients.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => {

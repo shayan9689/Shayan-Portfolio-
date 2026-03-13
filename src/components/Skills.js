@@ -66,7 +66,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-gradient-to-b from-white via-blue-50/20 to-white dark:from-[#0b1220] dark:via-[#0f172a] dark:to-[#0b1220]">
+    <section id="skills" className="section-padding bg-gradient-to-b from-white via-gray-100/50 to-white dark:from-darkGray dark:via-darkGray-card dark:to-darkGray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -86,7 +86,7 @@ const Skills = () => {
             return (
               <div
                 key={index}
-                className="bg-white dark:bg-[#0f172a] p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 border-primary/20 dark:border-primary/30 group"
+                className="bg-white dark:bg-darkGray-card p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 border-primary/20 dark:border-primary/30 group"
                 data-aos="fade-up"
                 data-aos-delay={category.delay}
               >
@@ -104,7 +104,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div
                       key={skillIndex}
-                      className="group/skill bg-gradient-to-r from-blue-50/50 via-white to-blue-50/30 dark:from-[#0b1220] dark:via-[#0f172a] dark:to-[#0b1220] p-4 sm:p-5 rounded-lg border-l-4 border-primary/30 dark:border-primary/40 hover:border-primary dark:hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-x-1"
+                      className="group/skill bg-gradient-to-r from-gray-100/80 via-white to-gray-100/50 dark:from-darkGray dark:via-darkGray-card dark:to-darkGray p-4 sm:p-5 rounded-lg border-l-4 border-primary/30 dark:border-primary/40 hover:border-primary dark:hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-x-1"
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex-1">
@@ -112,7 +112,7 @@ const Skills = () => {
                             {skill.name}
                           </h4>
                           <div className="flex items-center gap-2">
-                            <div className="flex-1 h-2 bg-blue-100 dark:bg-[#0b1220] rounded-full overflow-hidden">
+                            <div className="flex-1 h-2 bg-gray-200 dark:bg-darkGray rounded-full overflow-hidden">
                               <div 
                                 className="h-full bg-gradient-to-r from-primary via-primary-light to-primary-dark rounded-full transition-all duration-1000"
                                 style={{ width: `${skill.percentage}%` }}

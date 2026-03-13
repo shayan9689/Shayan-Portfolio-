@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20 pb-10 sm:pt-24 sm:pb-12 md:pt-28 md:pb-16 relative overflow-hidden bg-[#f8fafc] dark:bg-[#0b1220] z-0">
+    <section id="home" className="min-h-screen flex items-center pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-20 md:pb-24 relative overflow-hidden bg-[#f8fafc] dark:bg-darkGray z-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-12">
           {/* Left Column - Text Content */}
@@ -33,7 +33,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 md:mb-8 max-w-[600px] mx-auto lg:mx-0 text-secondary dark:text-[#e2e8f0] leading-relaxed font-sans" data-aos="fade-up" data-aos-delay="400">
-              Transforming raw data into intelligent solutions through cutting-edge machine learning and artificial intelligence. Specializing in AI/ML, Data Science, Data Engineering, and full-stack development with 1+ year of experience delivering results for international clients.
+              Transforming raw data into intelligent solutions through cutting-edge machine learning and artificial intelligence. Specializing in AI/ML, Data Science, Data Engineering, and full-stack development with 1.5+ years of experience delivering results for international clients.
             </p>
             
             {/* Buttons and Social - Only visible on desktop, hidden on mobile */}
@@ -42,14 +42,14 @@ const Hero = () => {
                 <a
                   href="#projects"
                   onClick={(e) => handleNavClick(e, '#projects')}
-                  className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-primary text-white border-2 border-primary hover:bg-primary-dark hover:border-primary-dark transition-all inline-flex items-center justify-center gap-2"
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-copper-metallic text-white border border-primary-dark/50 shadow-copper-metallic hover:shadow-copper-glow transition-all inline-flex items-center justify-center gap-2"
                 >
                   View Projects
                 </a>
                 <a
                   href="#contact"
                   onClick={(e) => handleNavClick(e, '#contact')}
-                  className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-white dark:bg-[#0f172a] text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all inline-flex items-center justify-center gap-2"
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-white dark:bg-darkGray-card text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all inline-flex items-center justify-center gap-2"
                 >
                   Contact Me
                 </a>
@@ -66,7 +66,7 @@ const Hero = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={link.label}
-                        className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white dark:bg-[#0f172a] flex items-center justify-center text-secondary dark:text-[#e5e7eb] shadow-sm hover:bg-primary hover:text-white transition-all"
+                        className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white dark:bg-darkGray-card flex items-center justify-center text-secondary dark:text-[#e5e7eb] shadow-sm hover:bg-primary hover:text-white transition-all"
                       >
                         <IconComponent />
                       </a>
@@ -81,8 +81,8 @@ const Hero = () => {
           <div className="flex-1 w-full flex justify-center items-center" data-aos="fade-left" data-aos-delay="500">
             <div className="relative w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px]">
               {/* Profile Image Container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-[#0f172a]">
-                <div className="relative w-full aspect-[5/6] overflow-hidden bg-gradient-to-br from-white to-blue-50 dark:from-[#0f172a] dark:to-[#1e293b]">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-darkGray-card">
+                <div className="relative w-full aspect-[5/6] overflow-hidden bg-gradient-to-br from-white to-slate-50 dark:from-darkGray-card dark:to-darkGray-section">
                   <img
                     src="/profile1.png"
                     alt="Shayan Umair"
@@ -102,14 +102,14 @@ const Hero = () => {
             <a
               href="#projects"
               onClick={(e) => handleNavClick(e, '#projects')}
-              className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-primary text-white border-2 border-primary hover:bg-primary-dark hover:border-primary-dark transition-all inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+              className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-copper-metallic text-white border border-primary-dark/50 shadow-copper-metallic hover:shadow-copper-glow transition-all inline-flex items-center justify-center gap-2 w-full sm:w-auto"
             >
               View Projects
             </a>
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
-              className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-white dark:bg-[#0f172a] text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+              className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-[0.95rem] bg-white dark:bg-darkGray-card text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all inline-flex items-center justify-center gap-2 w-full sm:w-auto"
             >
               Contact Me
             </a>
@@ -126,7 +126,7 @@ const Hero = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={link.label}
-                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white dark:bg-[#0f172a] flex items-center justify-center text-secondary dark:text-[#e5e7eb] shadow-sm hover:bg-primary hover:text-white transition-all"
+                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white dark:bg-darkGray-card flex items-center justify-center text-secondary dark:text-[#e5e7eb] shadow-sm hover:bg-primary hover:text-white transition-all"
                   >
                     <IconComponent />
                   </a>

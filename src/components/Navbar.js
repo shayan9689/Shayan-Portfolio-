@@ -85,9 +85,14 @@ const Navbar = ({ isDark, toggleTheme }) => {
           aria-hidden="true"
         />
       )}
-      <nav className={`fixed top-0 left-0 w-full py-5 bg-white/95 dark:bg-[#0d1220]/85 backdrop-blur-[10px] shadow-sm z-[1000] transition-all ${
-        isScrolled ? 'py-[15px] shadow-md' : ''
-      }`}>
+      <nav
+        className={`fixed top-0 left-0 w-full py-5 bg-nav-metallic-light dark:bg-nav-metallic-dark bg-[length:220%_220%] bg-no-repeat backdrop-blur-[14px] shadow-sm z-[1000] transition-all duration-700 ease-out ${
+          isScrolled ? 'py-[15px] shadow-md shadow-black/20' : ''
+        }`}
+        style={{
+          backgroundPosition: isScrolled ? '85% 0%' : '5% 0%',
+        }}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] flex justify-between items-center">
         <a
           href="#home"
@@ -99,7 +104,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           <span className="text-primary">.</span>
         </a>
 
-        <div className={`nav-links flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 lg:static lg:flex-row lg:w-auto lg:h-auto lg:bg-transparent lg:dark:bg-transparent fixed top-[70px] sm:top-20 left-0 w-full h-[calc(100vh-70px)] sm:h-[calc(100vh-80px)] bg-white dark:bg-[#0b1220] flex-col justify-start pt-6 sm:pt-8 lg:pt-0 lg:justify-center transition-all duration-300 ease-in-out z-[999] overflow-y-auto ${
+        <div className={`nav-links flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 lg:static lg:flex-row lg:w-auto lg:h-auto lg:bg-transparent lg:dark:bg-transparent fixed top-[70px] sm:top-20 left-0 w-full h-[calc(100vh-70px)] sm:h-[calc(100vh-80px)] bg-white dark:bg-darkGray flex-col justify-start pt-6 sm:pt-8 lg:pt-0 lg:justify-center transition-all duration-300 ease-in-out z-[999] overflow-y-auto ${
           isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}>
           {navLinks.map((link, index) => (
@@ -122,7 +127,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           <a
             href="/assets/Shayan-umair-Resume.pdf"
             download
-            className="btn-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg font-semibold text-xs sm:text-[0.85rem] md:text-[0.9rem] bg-primary text-white border-2 border-primary hover:bg-primary-dark hover:border-primary-dark hover:-translate-y-0.5 hover:shadow-md transition-all whitespace-nowrap mt-2 lg:mt-0 ml-0 lg:ml-2 w-full sm:w-auto text-center"
+            className="btn-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg font-semibold text-xs sm:text-[0.85rem] md:text-[0.9rem] bg-copper-metallic text-white border border-primary-dark/50 shadow-copper-metallic hover:shadow-copper-glow hover:-translate-y-0.5 transition-all whitespace-nowrap mt-2 lg:mt-0 ml-0 lg:ml-2 w-full sm:w-auto text-center"
             data-aos="fade-down"
             data-aos-delay="600"
           >

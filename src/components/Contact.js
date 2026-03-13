@@ -80,7 +80,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-b from-white to-blue-50/30 dark:from-[#0b1220] dark:to-[#0f172a]">
+    <section id="contact" className="section-padding bg-gradient-to-b from-white to-gray-100/80 dark:from-darkGray dark:to-darkGray-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -154,7 +154,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={link.label}
-                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-[#0f172a] flex items-center justify-center text-dark dark:text-[#e5e7eb] shadow-sm hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-md transition-all border border-blue-100 dark:border-blue-900/30"
+                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-darkGray-card flex items-center justify-center text-dark dark:text-[#e5e7eb] shadow-sm hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-md transition-all border border-gray-200 dark:border-darkGray-border"
                     >
                       <IconComponent />
                     </a>
@@ -164,7 +164,7 @@ const Contact = () => {
             </div>
           </div>
           <form
-            className="flex-1 w-full bg-white dark:bg-[#0f172a] p-6 sm:p-8 rounded-xl shadow-lg border border-blue-100 dark:border-blue-900/30"
+            className="flex-1 w-full bg-white dark:bg-darkGray-card p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200 dark:border-darkGray-border"
             onSubmit={handleSubmit}
             data-aos="fade-left"
           >
@@ -182,7 +182,7 @@ const Contact = () => {
                 required
                 aria-required="true"
                 autoComplete="name"
-                className="w-full px-4 py-3 border border-blue-200 dark:border-[#1e293b] rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans bg-white dark:bg-[#0f172a] text-dark dark:text-[#e2e8f0]"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-darkGray-border rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans bg-white dark:bg-darkGray-card text-dark dark:text-[#e2e8f0]"
               />
             </div>
             <div className="mb-5">
@@ -199,7 +199,7 @@ const Contact = () => {
                 required
                 aria-required="true"
                 autoComplete="email"
-                className="w-full px-4 py-3 border border-blue-200 dark:border-[#1e293b] rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans bg-white dark:bg-[#0f172a] text-dark dark:text-[#e2e8f0]"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-darkGray-border rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans bg-white dark:bg-darkGray-card text-dark dark:text-[#e2e8f0]"
               />
             </div>
             <div className="mb-5">
@@ -214,7 +214,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Enter subject"
                 autoComplete="off"
-                className="w-full px-4 py-3 border border-blue-200 dark:border-[#1e293b] rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans bg-white dark:bg-[#0f172a] text-dark dark:text-[#e2e8f0]"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-darkGray-border rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans bg-white dark:bg-darkGray-card text-dark dark:text-[#e2e8f0]"
               />
             </div>
             <div className="mb-5">
@@ -230,7 +230,7 @@ const Contact = () => {
                 required
                 aria-required="true"
                 rows="6"
-                className="w-full px-4 py-3 border border-blue-200 dark:border-[#1e293b] rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans resize-y min-h-[150px] bg-white dark:bg-[#0f172a] text-dark dark:text-[#e2e8f0]"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-darkGray-border rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 font-sans resize-y min-h-[150px] bg-white dark:bg-darkGray-card text-dark dark:text-[#e2e8f0]"
               />
             </div>
             <button

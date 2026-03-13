@@ -48,7 +48,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-white dark:bg-[#0b1220]">
+    <section id="about" className="section-padding bg-white dark:bg-darkGray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
           <h4 className="text-base sm:text-lg text-accent font-normal uppercase tracking-wider mb-3 sm:mb-4 inline-block">
@@ -68,9 +68,9 @@ const About = () => {
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />
-              <div className="absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 bg-gradient-to-r from-primary to-primary-dark w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white dark:border-[#0f172a]">
+              <div className="absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 bg-gradient-to-r from-primary to-primary-dark w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white dark:border-darkGray-card">
                 <div className="text-center">
-                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">1+</span>
+                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">1.5+</span>
                   <span className="text-xs sm:text-sm font-medium block">Year Experience</span>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const About = () => {
               Who am I?
             </h3>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
-              I'm a passionate Computer Science student specializing in AI and Data Science at Lahore Leads University. With 1+ year of experience, I build intelligent systems that solve real-world problems across various industries.
+              I'm a passionate Computer Science student specializing in AI and Data Science at Lahore Leads University. With 1.5+ years of experience, I build intelligent systems that solve real-world problems across various industries.
             </p>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
               I actively freelance and maintain partnerships with international clients, delivering solutions across web applications and mobile apps using React, Next.js, Tailwind CSS, Flutter, and React Native.
@@ -96,7 +96,7 @@ const About = () => {
                     className={`px-3 sm:px-5 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base font-medium cursor-pointer transition-all inline-flex items-center gap-2 ${
                       activeTab === tab.id
                         ? 'bg-primary text-white shadow-lg'
-                        : 'bg-blue-50 dark:bg-[#0b1220] text-accent dark:text-[#cbd5e1] hover:bg-blue-100 dark:hover:bg-[#1e293b]'
+                        : 'bg-gray-50 dark:bg-darkGray text-accent dark:text-[#cbd5e1] hover:bg-gray-100 dark:hover:bg-darkGray-section'
                     }`}
                   >
                     <IconComponent />
@@ -109,7 +109,7 @@ const About = () => {
               {activeTab === 'skills' && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                   {skillsData.map((skill, index) => (
-                    <div key={index} className="flex items-center justify-between p-4 bg-blue-50 dark:bg-[#0f172a] rounded-lg border border-blue-100 dark:border-blue-900/30 hover:border-primary/40 dark:hover:border-primary/50 transition-all">
+                    <div key={index} className="flex items-center justify-between p-4 bg-gray-50 dark:bg-darkGray-card rounded-lg border border-gray-200 dark:border-darkGray-border hover:border-primary/40 dark:hover:border-primary/50 transition-all">
                       <div className="font-medium text-sm sm:text-base text-dark dark:text-[#e5e7eb]">{skill.name}</div>
                       <span className="font-bold text-primary text-sm sm:text-base">{skill.percentage}%</span>
                     </div>
@@ -119,9 +119,9 @@ const About = () => {
               {activeTab === 'education' && (
                 <div className="space-y-5 sm:space-y-6">
                   {educationData.map((edu, index) => (
-                    <div key={index} className="mb-4 sm:mb-5 p-4 sm:p-5 bg-blue-50 dark:bg-[#0f172a] rounded-lg border border-blue-100 dark:border-blue-900/30">
+                    <div key={index} className="mb-4 sm:mb-5 p-4 sm:p-5 bg-gray-50 dark:bg-darkGray-card rounded-lg border border-gray-200 dark:border-darkGray-border">
                       <h4 className="text-base sm:text-lg mb-1 sm:mb-2 text-dark dark:text-[#e5e7eb] font-semibold">{edu.title}</h4>
-                      <p className="text-xs sm:text-sm text-primary dark:text-blue-400 mb-2 font-medium">{edu.period}</p>
+                      <p className="text-xs sm:text-sm text-primary dark:text-primary mb-2 font-medium">{edu.period}</p>
                       <p className="text-xs sm:text-sm text-accent dark:text-[#94a3b8] leading-relaxed">{edu.description}</p>
                     </div>
                   ))}
@@ -130,9 +130,9 @@ const About = () => {
               {activeTab === 'experience' && (
                 <div className="space-y-5 sm:space-y-6">
                   {experienceData.map((exp, index) => (
-                    <div key={index} className="mb-4 sm:mb-5 p-4 sm:p-5 bg-blue-50 dark:bg-[#0f172a] rounded-lg border border-blue-100 dark:border-blue-900/30">
+                    <div key={index} className="mb-4 sm:mb-5 p-4 sm:p-5 bg-gray-50 dark:bg-darkGray-card rounded-lg border border-gray-200 dark:border-darkGray-border">
                       <h4 className="text-base sm:text-lg mb-1 sm:mb-2 text-dark dark:text-[#e5e7eb] font-semibold">{exp.title}</h4>
-                      <p className="text-xs sm:text-sm text-primary dark:text-blue-400 mb-1 font-medium">{exp.company}</p>
+                      <p className="text-xs sm:text-sm text-primary dark:text-primary mb-1 font-medium">{exp.company}</p>
                       <p className="text-xs sm:text-sm text-accent dark:text-[#94a3b8] mb-2">{exp.period}</p>
                       <p className="text-xs sm:text-sm text-secondary dark:text-[#e2e8f0] leading-relaxed">{exp.description}</p>
                     </div>

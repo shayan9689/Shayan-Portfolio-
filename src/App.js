@@ -3,6 +3,7 @@ import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Certifications from './components/Certifications';
+import TechnologiesMarquee from './components/TechnologiesMarquee';
 import Testimonials from './components/Testimonials';
 import Experience from './components/Experience';
 import About from './components/About';
@@ -35,12 +36,13 @@ function App() {
       document.body.style.overflow = '';
     }
 
-    // Initialize AOS
+    // Initialize AOS – once: false so every section animates again each time you scroll to it
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
-      once: true,
-      mirror: false
+      once: false,
+      mirror: false,
+      offset: 60,
     });
 
     // Handle preloader - check if page is already loaded
@@ -86,6 +88,7 @@ function App() {
           <main id="main-content" tabIndex="-1" role="main">
             <Hero />
             <Certifications />
+            <TechnologiesMarquee isDark={isDark} />
             <Testimonials />
             <Experience />
             <About />

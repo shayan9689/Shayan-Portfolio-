@@ -1,12 +1,31 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaComments, FaTimes, FaPaperPlane, FaRobot, FaUser } from 'react-icons/fa';
 
+const SYSTEM_PROMPT = `
+You are an AI assistant for my personal profile website. Your job is to help visitors understand my work, skills, projects, and services available on this website.
+
+Behavior Guidelines:
+- When a user greets you (hello, hi, salam, etc.), respond warmly and include a few light emojis ONLY IN YOUR FIRST REPLY of the conversation. After the first reply, never start again with “hello”, “hi”, or similar greetings.
+- Keep answers SHORT, clear, and directly related to this website only.
+- Prefer bullet points and use these symbols:
+  ✔️ for correct/available info
+  ❌ for unavailable/not provided info
+  📌 for important notes
+- Assume you know all content on this website: profile, skills, projects, portfolio, services, and contact details. When helpful, mention where on the site something is (e.g. "📌 You can see this in the *Projects* section.").
+- Track conversation context so your answers stay consistent with earlier messages.
+- If a question is not about this website (politics, random facts, personal life, etc.), politely refuse and say you only answer questions about this website.
+- Tone: professional, friendly, helpful, simple language, with light emoji use (do not spam emojis).
+- Never answer unrelated questions, never invent details that are not on the website, and never write long explanations.
+
+Always follow these rules before answering the user.
+`;
+
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Hello! I'm Shayan's AI assistant. How can I help you today?",
+      text: "👋 Hello! I'm Shayan's AI assistant. How can I help you explore my skills, projects, or services today? 🙂",
       sender: 'bot',
       timestamp: new Date()
     }
@@ -53,7 +72,7 @@ const Chatbot = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          message: userMessage.text
+          message: `${SYSTEM_PROMPT}\n\nUser: ${userMessage.text}`
         })
       });
 
@@ -122,7 +141,7 @@ const Chatbot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-[9999] w-[380px] sm:w-[420px] h-[600px] bg-white dark:bg-[#0f172a] rounded-2xl shadow-2xl flex flex-col border-2 border-primary/20 dark:border-primary/30 overflow-hidden">
+        <div className="fixed bottom-6 right-6 z-[9999] w-[380px] sm:w-[420px] h-[600px] bg-white dark:bg-darkGray-card rounded-2xl shadow-2xl flex flex-col border-2 border-primary/20 dark:border-primary/30 overflow-hidden chatbot-window-animate">
           {/* Chat Header */}
           <div className="bg-gradient-to-r from-primary to-primary-dark text-white p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -144,11 +163,13 @@ const Chatbot = () => {
           </div>
 
           {/* Messages Container */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50/50 dark:bg-[#0b1220]">
+          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50/50 dark:bg-darkGray scrollbar-hide">
             {messages.map((message) => (
               <div
                 key={message.id}
-                className={`flex gap-3 ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
+                className={`flex gap-3 ${message.sender === 'user' ? 'justify-end' : 'justify-start'} ${
+                  message.id === 1 && message.sender === 'bot' ? 'chatbot-first-message-animate' : ''
+                }`}
               >
                 {message.sender === 'bot' && (
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
@@ -159,7 +180,7 @@ const Chatbot = () => {
                   className={`max-w-[75%] rounded-2xl px-4 py-2.5 ${
                     message.sender === 'user'
                       ? 'bg-primary text-white rounded-br-sm'
-                      : 'bg-white dark:bg-[#1e293b] text-dark dark:text-[#e5e7eb] rounded-bl-sm shadow-sm'
+                      : 'bg-white dark:bg-darkGray-section text-dark dark:text-[#e5e7eb] rounded-bl-sm shadow-sm'
                   }`}
                 >
                   {message.sender === 'bot' ? (
@@ -188,7 +209,7 @@ const Chatbot = () => {
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <FaRobot className="text-primary text-sm" />
                 </div>
-                <div className="bg-white dark:bg-[#1e293b] rounded-2xl rounded-bl-sm px-4 py-2.5 shadow-sm">
+                <div className="bg-white dark:bg-darkGray-section rounded-2xl rounded-bl-sm px-4 py-2.5 shadow-sm">
                   <div className="flex gap-1">
                     <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
                     <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
@@ -201,7 +222,7 @@ const Chatbot = () => {
           </div>
 
           {/* Input Area */}
-          <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0f172a]">
+          <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-darkGray-card">
             <div className="flex gap-2">
               <input
                 ref={inputRef}
@@ -211,7 +232,7 @@ const Chatbot = () => {
                 onKeyPress={handleKeyPress}
                 placeholder="Type your message..."
                 disabled={isLoading}
-                className="flex-1 px-4 py-2.5 rounded-lg border border-gray-300 dark:border-[#1e293b] bg-white dark:bg-[#0b1220] text-dark dark:text-[#e5e7eb] text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex-1 px-4 py-2.5 rounded-lg border border-gray-300 dark:border-darkGray-border bg-white dark:bg-darkGray text-dark dark:text-[#e5e7eb] text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <button
                 onClick={sendMessage}

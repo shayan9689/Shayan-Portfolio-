@@ -51,6 +51,20 @@ const Chatbot = () => {
     }
   }, [isOpen]);
 
+  // Prevent background page from scrolling when chat window is open
+  useEffect(() => {
+    if (isOpen) {
+      const previousBodyOverflow = document.body.style.overflow;
+      const previousHtmlOverflow = document.documentElement.style.overflow;
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = previousBodyOverflow || '';
+        document.documentElement.style.overflow = previousHtmlOverflow || '';
+      };
+    }
+  }, [isOpen]);
+
   const sendMessage = async () => {
     if (!inputMessage.trim() || isLoading) return;
 

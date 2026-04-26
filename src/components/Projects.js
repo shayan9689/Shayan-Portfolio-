@@ -243,7 +243,7 @@ const Projects = () => {
           {canScrollLeft && (
             <button
               onClick={() => scroll('left')}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-darkGray-card rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
+              className="absolute -left-6 md:-left-10 xl:-left-16 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-darkGray-card rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
               aria-label="Scroll left"
             >
               <FaChevronLeft className="text-lg" />
@@ -252,7 +252,7 @@ const Projects = () => {
           {canScrollRight && (
             <button
               onClick={() => scroll('right')}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-darkGray-card rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
+              className="absolute -right-6 md:-right-10 xl:-right-16 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-darkGray-card rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all border-2 border-primary/20 hover:border-primary hidden sm:flex"
               aria-label="Scroll right"
             >
               <FaChevronRight className="text-lg" />
@@ -283,10 +283,10 @@ const Projects = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-125"
                     loading="lazy"
                   />
-                  {/* 1+ Year Experience Badge - Blue Color */}
+                  {/* Experience badge */}
                   <div className="absolute top-3 left-3 bg-primary text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-lg flex items-center gap-1.5 sm:gap-2 z-10 border-2 border-white/20">
-                    <span className="text-xs sm:text-sm font-bold">1.5+</span>
-                    <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap">Year Experience</span>
+                    <span className="text-xs sm:text-sm font-bold">2</span>
+                    <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap">Years Experience</span>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                     <a

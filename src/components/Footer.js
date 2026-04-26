@@ -56,7 +56,7 @@ const Footer = () => {
               <span className="text-primary">.</span>
             </a>
             <p className="text-[#94a3b8] text-sm leading-relaxed">
-              Business Development professional with 1.5+ years of experience. Creating intelligent solutions through cutting-edge technology for international clients.
+              Business Development professional with 2 years of experience. Creating intelligent solutions through cutting-edge technology for international clients.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => {

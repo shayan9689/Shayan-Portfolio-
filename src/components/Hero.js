@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-20 md:pb-24 relative overflow-hidden bg-[#f8fafc] dark:bg-darkGray z-0">
+    <section id="home" className="min-h-screen flex items-center pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-20 md:pb-24 relative overflow-hidden bg-light dark:bg-darkGray z-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-12">
           {/* Left Column - Text Content */}
@@ -33,7 +33,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 md:mb-8 max-w-[600px] mx-auto lg:mx-0 text-secondary dark:text-[#e2e8f0] leading-relaxed font-sans" data-aos="fade-up" data-aos-delay="400">
-              Transforming raw data into intelligent solutions through cutting-edge machine learning and artificial intelligence. Specializing in AI/ML, Data Science, Data Engineering, and full-stack development with 1.5+ years of experience delivering results for international clients.
+              Transforming raw data into intelligent solutions through cutting-edge machine learning and artificial intelligence. Specializing in AI/ML, Data Science, Data Engineering, and full-stack development with 2 years of experience delivering results for international clients.
             </p>
             
             {/* Buttons and Social - Only visible on desktop, hidden on mobile */}
@@ -82,7 +82,7 @@ const Hero = () => {
             <div className="relative w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px]">
               {/* Profile Image Container */}
               <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-darkGray-card">
-                <div className="relative w-full aspect-[5/6] overflow-hidden bg-gradient-to-br from-white to-slate-50 dark:from-darkGray-card dark:to-darkGray-section">
+                <div className="relative w-full aspect-[5/6] overflow-hidden bg-gradient-to-br from-light to-primary-light/25 dark:from-darkGray-card dark:to-darkGray-section">
                   <img
                     src="/profile1.png"
                     alt="Shayan Umair"

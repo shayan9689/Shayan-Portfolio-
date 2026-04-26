@@ -70,8 +70,8 @@ const About = () => {
               />
               <div className="absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 bg-gradient-to-r from-primary to-primary-dark w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white dark:border-darkGray-card">
                 <div className="text-center">
-                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">1.5+</span>
-                  <span className="text-xs sm:text-sm font-medium block">Year Experience</span>
+                  <span className="text-xl sm:text-2xl lg:text-[2rem] font-bold block leading-none">2</span>
+                  <span className="text-xs sm:text-sm font-medium block">Years Experience</span>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ const About = () => {
               Who am I?
             </h3>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
-              I'm a passionate Computer Science student specializing in AI and Data Science at Lahore Leads University. With 1.5+ years of experience, I build intelligent systems that solve real-world problems across various industries.
+              I'm a passionate Computer Science student specializing in AI and Data Science at Lahore Leads University. With 2 years of experience, I build intelligent systems that solve real-world problems across various industries.
             </p>
             <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-secondary dark:text-[#e2e8f0]">
               I actively freelance and maintain partnerships with international clients, delivering solutions across web applications and mobile apps using React, Next.js, Tailwind CSS, Flutter, and React Native.

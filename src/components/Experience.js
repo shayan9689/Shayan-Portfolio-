@@ -45,7 +45,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-sm sm:text-base text-accent dark:text-[#94a3b8] max-w-2xl mx-auto mb-4">
-            1.5+ years of professional experience in sales and business development
+            2 years of professional experience in sales and business development
           </p>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-sm" />
         </div>

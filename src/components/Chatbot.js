@@ -140,7 +140,7 @@ const Chatbot = () => {
       {/* Floating Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center hover:scale-110 ${
+        className={`chatbot-float-button fixed bottom-20 sm:bottom-24 right-6 z-[9999] w-14 h-14 rounded-full bg-primary text-white shadow-lg hover:animate-none hover:scale-110 hover:shadow-xl transition-all duration-300 flex items-center justify-center ${
           isOpen ? 'hidden' : 'flex'
         }`}
         aria-label="Open chat"

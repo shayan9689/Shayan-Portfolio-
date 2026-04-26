@@ -23,8 +23,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [isDark, setIsDark] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return savedTheme ? savedTheme === 'dark' : prefersDark;
+    return savedTheme ? savedTheme === 'dark' : false;
   });
   const [showPreloader, setShowPreloader] = useState(true);
 

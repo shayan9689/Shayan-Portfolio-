@@ -22,7 +22,7 @@ const TECHNOLOGIES = [
 
 const LogoImage = ({ tech, isDark }) => {
   const [errored, setErrored] = useState(false);
-  const hex = isDark ? 'e8e8e8' : tech.color.replace('#', ''); // silver-white in dark for metallic look
+  const hex = isDark ? '93B1A6' : tech.color.replace('#', '');
   const src = `https://cdn.simpleicons.org/${tech.slug}/${hex}`;
   return (
     <div className="flex flex-col items-center justify-center flex-shrink-0 mx-4 sm:mx-5">
@@ -69,7 +69,7 @@ const TechnologiesMarquee = ({ isDark = false }) => {
   return (
     <section
       id="technologies"
-      className="section-padding bg-white dark:bg-darkGray overflow-hidden overflow-x-hidden scrollbar-hide relative"
+      className="section-padding bg-light dark:bg-darkGray overflow-hidden overflow-x-hidden scrollbar-hide relative"
       aria-label="Technologies I work with"
       style={{ overflow: 'hidden' }}
     >
@@ -87,10 +87,10 @@ const TechnologiesMarquee = ({ isDark = false }) => {
       />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] relative z-10">
         <div className="text-center mb-10 sm:mb-12" data-aos="fade-up">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark dark:text-white mb-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark dark:text-[#E7F0EC] mb-2">
             Technologies I Work With
           </h2>
-          <p className="text-sm sm:text-base text-accent dark:text-gray-400 max-w-xl mx-auto">
+          <p className="text-sm sm:text-base text-accent dark:text-[#93B1A6] max-w-xl mx-auto">
             These are the tools and technologies I use to bring ideas to life.
           </p>
         </div>
@@ -101,7 +101,7 @@ const TechnologiesMarquee = ({ isDark = false }) => {
         <div
           className="absolute left-0 top-0 bottom-0 z-20 pointer-events-none w-24 sm:w-28 md:w-36 lg:w-40 dark:hidden"
           style={{
-            background: 'linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.96) 15%, rgba(255,255,255,0) 100%)',
+            background: 'linear-gradient(to right, #E7F0EC 0%, rgba(231,240,236,0.96) 15%, rgba(231,240,236,0) 100%)',
             backdropFilter: 'blur(4px)',
             WebkitBackdropFilter: 'blur(4px)',
             clipPath: 'polygon(0 0, 100% 0, 88% 50%, 100% 100%, 0 100%)',
@@ -111,7 +111,7 @@ const TechnologiesMarquee = ({ isDark = false }) => {
         <div
           className="absolute left-0 top-0 bottom-0 z-20 pointer-events-none w-24 sm:w-28 md:w-36 lg:w-40 hidden dark:block"
           style={{
-            background: 'linear-gradient(to right, #3a3a3a 0%, rgba(58,58,58,0.95) 15%, rgba(58,58,58,0) 100%)',
+            background: 'linear-gradient(to right, #040D12 0%, rgba(24,61,61,0.95) 15%, rgba(24,61,61,0) 100%)',
             backdropFilter: 'blur(5px)',
             WebkitBackdropFilter: 'blur(5px)',
             clipPath: 'polygon(0 0, 100% 0, 88% 50%, 100% 100%, 0 100%)',
@@ -122,7 +122,7 @@ const TechnologiesMarquee = ({ isDark = false }) => {
         <div
           className="absolute right-0 top-0 bottom-0 z-20 pointer-events-none w-24 sm:w-28 md:w-36 lg:w-40 dark:hidden"
           style={{
-            background: 'linear-gradient(to left, #ffffff 0%, rgba(255,255,255,0.96) 15%, rgba(255,255,255,0) 100%)',
+            background: 'linear-gradient(to left, #E7F0EC 0%, rgba(231,240,236,0.96) 15%, rgba(231,240,236,0) 100%)',
             backdropFilter: 'blur(4px)',
             WebkitBackdropFilter: 'blur(4px)',
             clipPath: 'polygon(100% 0, 100% 100%, 0 100%, 12% 50%, 0 0)',
@@ -132,7 +132,7 @@ const TechnologiesMarquee = ({ isDark = false }) => {
         <div
           className="absolute right-0 top-0 bottom-0 z-20 pointer-events-none w-24 sm:w-28 md:w-36 lg:w-40 hidden dark:block"
           style={{
-            background: 'linear-gradient(to left, #3a3a3a 0%, rgba(58,58,58,0.95) 15%, rgba(58,58,58,0) 100%)',
+            background: 'linear-gradient(to left, #040D12 0%, rgba(24,61,61,0.95) 15%, rgba(24,61,61,0) 100%)',
             backdropFilter: 'blur(5px)',
             WebkitBackdropFilter: 'blur(5px)',
             clipPath: 'polygon(100% 0, 100% 100%, 0 100%, 12% 50%, 0 0)',

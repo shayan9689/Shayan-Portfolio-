@@ -107,7 +107,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           backgroundPosition: isScrolled ? '85% 0%' : '5% 0%',
         }}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px] flex justify-between items-center">
+        <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 flex justify-between items-center">
         <a
           href="#home"
           onClick={(e) => handleNavClick(e, '#home')}
@@ -118,7 +118,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
           <span className="text-primary">.</span>
         </a>
 
-        <div className={`nav-links flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 lg:static lg:flex-row lg:w-auto lg:h-auto lg:bg-transparent lg:dark:bg-transparent fixed top-[70px] sm:top-20 left-0 w-full h-[calc(100vh-70px)] sm:h-[calc(100vh-80px)] bg-white dark:bg-darkGray flex-col justify-start pt-6 sm:pt-8 lg:pt-0 lg:justify-center transition-all duration-300 ease-in-out z-[999] overflow-y-auto ${
+        <div className={`nav-links flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 lg:static lg:flex-1 lg:flex-row lg:w-auto lg:h-auto lg:bg-transparent lg:dark:bg-transparent fixed top-[70px] sm:top-20 left-0 w-full h-[calc(100vh-70px)] sm:h-[calc(100vh-80px)] bg-white dark:bg-darkGray flex-col justify-start pt-6 sm:pt-8 lg:pt-0 lg:justify-center transition-all duration-300 ease-in-out z-[999] overflow-y-auto ${
           isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}>
           {navLinks.map((link, index) => (

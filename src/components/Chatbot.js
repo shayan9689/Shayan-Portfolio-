@@ -45,11 +45,14 @@ const Chatbot = () => {
     scrollToBottom();
   }, [messages]);
 
+  // Keep the message field focused whenever the panel is open and editable (re-focus after replies finish loading).
   useEffect(() => {
-    if (isOpen && inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, [isOpen]);
+    if (!isOpen || isLoading) return;
+    const id = window.requestAnimationFrame(() => {
+      inputRef.current?.focus({ preventScroll: true });
+    });
+    return () => window.cancelAnimationFrame(id);
+  }, [isOpen, isLoading]);
 
   // Prevent background page from scrolling when chat window is open
   useEffect(() => {
@@ -241,6 +244,7 @@ const Chatbot = () => {
               <input
                 ref={inputRef}
                 type="text"
+                autoFocus
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyPress={handleKeyPress}

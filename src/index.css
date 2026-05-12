@@ -23,7 +23,7 @@
   
   body {
     @apply font-sans text-secondary bg-light;
-    background: linear-gradient(180deg, #E7F0EC 0%, #C8DAD2 55%, #93B1A6 100%);
+    background: linear-gradient(180deg, #d8dbe2 0%, #c9d3e0 45%, #a9bcd0 78%, #8ec4cd 100%);
     background-attachment: fixed;
     overflow-x: hidden;
     width: 100%;
@@ -40,8 +40,8 @@
   }
   
   body.dark {
-    @apply text-[#E7F0EC];
-    background: linear-gradient(180deg, #040D12 0%, #183D3D 52%, #5C8374 78%, #93B1A6 100%);
+    @apply text-[#e8eaef];
+    background: linear-gradient(180deg, #1b1b1e 0%, #2c3342 48%, #447c88 72%, #58a4b0 88%, #a9bcd0 100%);
     background-attachment: fixed;
   }
   
@@ -55,7 +55,7 @@
   body.dark h4,
   body.dark h5,
   body.dark h6 {
-    @apply text-[#E7F0EC];
+    @apply text-[#e8eaef];
   }
 }
 
@@ -107,14 +107,53 @@
     display: block;
   }
 
+  /* Navbar: slow drifting metallic gradient (bg-nav-metallic-* from Tailwind) */
+  .navbar-metallic-animate {
+    background-size: 320% 320%;
+    animation: navbar-metallic-flow 20s ease-in-out infinite;
+  }
+
+  @keyframes navbar-metallic-flow {
+    0%,
+    100% {
+      background-position: 0% 35%;
+    }
+    25% {
+      background-position: 100% 45%;
+    }
+    50% {
+      background-position: 88% 72%;
+    }
+    75% {
+      background-position: 22% 88%;
+    }
+  }
+
   /* Chatbot animations */
   .chatbot-window-animate {
     animation: chatbot-window-fade-up 0.28s ease-out forwards;
     transform-origin: bottom right;
   }
 
-  .chatbot-first-message-animate {
-    animation: chatbot-message-fade 0.35s ease-out forwards;
+  /* Message bubble: directional slide + soft lift (single layer keeps motion crisp). */
+  .chatbot-msg-card-bot {
+    animation: chatbot-msg-card-bot-in 0.44s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .chatbot-msg-card-user {
+    animation: chatbot-msg-card-user-in 0.44s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .chatbot-loading-bubble {
+    animation: chatbot-msg-card-bot-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .chatbot-menu-backdrop {
+    animation: chatbot-menu-backdrop-in 0.22s ease-out forwards;
+  }
+
+  .chatbot-menu-sheet {
+    animation: chatbot-menu-sheet-up 0.32s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 
   .chatbot-float-button {
@@ -132,14 +171,25 @@
     }
   }
 
-  @keyframes chatbot-message-fade {
+  @keyframes chatbot-msg-card-bot-in {
     from {
       opacity: 0;
-      transform: translateY(6px);
+      transform: translateX(-12px) translateY(6px) scale(0.97);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0) translateY(0) scale(1);
+    }
+  }
+
+  @keyframes chatbot-msg-card-user-in {
+    from {
+      opacity: 0;
+      transform: translateX(12px) translateY(6px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) translateY(0) scale(1);
     }
   }
 
@@ -150,6 +200,46 @@
     }
     50% {
       transform: translateY(-10px);
+    }
+  }
+
+  @keyframes chatbot-menu-backdrop-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes chatbot-menu-sheet-up {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .chatbot-msg-card-bot,
+    .chatbot-msg-card-user,
+    .chatbot-loading-bubble {
+      animation-duration: 0.01ms !important;
+      animation-delay: 0ms !important;
+    }
+
+    .chatbot-menu-backdrop,
+    .chatbot-menu-sheet {
+      animation-duration: 0.01ms !important;
+    }
+
+    .navbar-metallic-animate {
+      animation: none;
+      background-size: 100% 100%;
+      background-position: 50% 50%;
     }
   }
 }

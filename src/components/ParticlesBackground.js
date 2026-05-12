@@ -14,7 +14,7 @@ const ParticlesBackground = () => {
               }
             },
             "color": {
-              "value": "#93B1A6"
+              "value": "#58a4b0"
             },
             "shape": {
               "type": "circle",
@@ -49,7 +49,7 @@ const ParticlesBackground = () => {
             "line_linked": {
               "enable": true,
               "distance": 150,
-              "color": "#93B1A6",
+              "color": "#58a4b0",
               "opacity": 0.2,
               "width": 1
             },
@@ -124,7 +124,7 @@ const ParticlesBackground = () => {
                   }
                 },
                 "color": {
-                  "value": "#93B1A6"
+                  "value": "#58a4b0"
                 },
                 "shape": {
                   "type": "circle"
@@ -139,7 +139,7 @@ const ParticlesBackground = () => {
                 "line_linked": {
                   "enable": true,
                   "distance": 150,
-                  "color": "#93B1A6",
+                  "color": "#58a4b0",
                   "opacity": 0.2,
                   "width": 1
                 },

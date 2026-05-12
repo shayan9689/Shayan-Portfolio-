@@ -100,12 +100,9 @@ const Navbar = ({ isDark, toggleTheme }) => {
         />
       )}
       <nav
-        className={`fixed top-0 left-0 w-full py-5 bg-nav-metallic-light dark:bg-nav-metallic-dark bg-[length:220%_220%] bg-no-repeat backdrop-blur-[14px] shadow-sm z-[1000] transition-all duration-700 ease-out ${
+        className={`fixed top-0 left-0 w-full py-5 bg-nav-metallic-light dark:bg-nav-metallic-dark navbar-metallic-animate bg-no-repeat backdrop-blur-[14px] shadow-sm z-[1000] transition-[padding,box-shadow] duration-700 ease-out ${
           isScrolled ? 'py-[15px] shadow-md shadow-black/20' : ''
         }`}
-        style={{
-          backgroundPosition: isScrolled ? '85% 0%' : '5% 0%',
-        }}
       >
         <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 flex justify-between items-center">
         <a
